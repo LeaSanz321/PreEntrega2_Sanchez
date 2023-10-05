@@ -281,6 +281,16 @@ a{
     background-size: cover;
     height: 70vh;
 }
+.imgFooter_g{
+    background-image:linear-gradient(
+    0deg, rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, .2)
+    )
+    ,url(../assets/images/gato2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
 .botonRegistrarse{
     border: 2px solid #FFF;
     padding: 8px 30px;
@@ -386,6 +396,11 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
+}
+
+.contenedorImgGal{
+    height: 520px;
+    width: 420px;
 }
 /*===============================>CONTACTO<==================== */
 
