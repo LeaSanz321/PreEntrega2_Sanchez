@@ -213,7 +213,7 @@ a{
 .secText > h5, .secText_m > h5, .secText_ss > h5, .secText_g > h5{
     font-size: 20px;
 }
-.secText > input, .secText_m > input, .secText_ss > input, .secText_g > input{
+.secText > button, .secText_m > button, .secText_ss > button, .secText_g > button{
     width: 550px;
     height: 40px;
     border-style: none;
@@ -276,21 +276,12 @@ a{
     0deg, rgba(0, 0, 0, 1),
     rgba(0, 0, 0, .2)
     )
-    ,url(../assets/images/img008.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-}
-.imgFooter_g{
-    background-image:linear-gradient(
-    0deg, rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, .2)
-    )
     ,url(../assets/images/gato2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
 }
+
 .botonRegistrarse{
     border: 2px solid #FFF;
     padding: 8px 30px;
@@ -404,6 +395,57 @@ a{
 }
 /*===============================>CONTACTO<==================== */
 
+.imgPrincipal_c{
+    height: 700px;
+}
+.yellowBar_c{
+    background-color: #e0cb0bc2;
+    width: 115px;
+    height: 90%;
+    bottom: 0;
+    left: 94px;
+}
+
+.formContact > h3{
+    font-size: 1.8em;
+    
+}
+
+.inpContact{
+    width:450px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #abababa8;
+    background: none;
+    margin-top: 30px;
+}
+.inpContact::placeholder{
+    color: #abababa8;
+    font-weight: light;
+}
+
+.btnContact{
+    margin-top:30px;
+    width: 450px;
+    height: 30px;
+    border: none;
+    background-color: #E0CB0B;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.secMap iframe{
+    border: none;
+    margin-top: 25px;
+    width: 85%; 
+    height: 450px;
+}
+
+/*===============================>CMEDIA QUERYS<==================== */
+
 
 /*MD*/
 @media screen and (width >= 768px) and (width < 992px)  {
@@ -462,7 +504,20 @@ a{
     .secVideo{
         display: none !important;
     }
-    
+
+    /*CONTACTO*/
+    .imgPrincipal_c{
+        height: 400px;
+    }    
+    .yellowBar_c{
+        width: 90%;
+        height: 18px;
+        top: 190px;
+        left: -20px;
+    }
+    .h1Titulo span{
+        font-size: 70px;
+    }
 }
 
 
@@ -549,7 +604,7 @@ a{
     .secText > h5{
         font-size: 15px;
     }
-    .secText > input {
+    .secText > button {
         width: 350px;
         height: 32px;
         font-size: 12px;
@@ -566,6 +621,22 @@ a{
         display: block !important;
     }
     
+    /*CONTACTO*/
+    .imgPrincipal_c{
+        height: 300px;
+    }
+    .formContact > h3{
+        font-size: 1.4em;
+        
+    }
+    .yellowBar_c{
+        width: 90%;
+        height: 16px;
+        top: 210px;
+        left: -20px;
+    }
 
-
+    .h1Titulo span{
+        font-size: 70px;
+    }
 }

@@ -6,22 +6,156 @@
     <title>Contacto-Sanz</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/a28d060fb2.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-black">
     
-    <header>
-        
+    <header class="d-flex flex-row header">
+        <div class="lateralNegro d-flex flex-column justify-content-between align-items-center bg-black">
+            <a href="#"><span class="logo">SZ</span></a>
+            <ul class="list-unstyled">
+                <li><a href="" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="" class="text-white"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="" class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="principalArea position-relative d-flex flex-column w-100">
+            <a href="#" class="logoMobile text-white position-absolute"><span class="logo">SZ</span></a>
+            <nav class="navbar navbar-expand-lg navbar-dark w-100">
+                <div class="container-fluid  d-flex justify-content-end">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobresanz.html">Sobre Sanz</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/marcas.html">Marcas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>    
+            <section class="seccionPrincipal_c position-relative h-100 row">
+              <div class="yellowBar_c position-absolute z-0"></div>
+              <div class="pt-5 col-sm-12 col-md-12 col-lg-6 d-flex flex-column align-items-sm-start align-items-md-center justify-content-center z-1 text-white fw-medium text-sm-start text-md-center text-lg-start">
+                <h1 class="h1Titulo m-0"><span>Contacto</span></h1>
+              </div>
+              <div class="imgPrincipal_c col-lg-6 d-flex justify-content-center align-items-end align-items-sm-center">
+                <form class="formContact" action="" method="post">
+                    <h3 class="text-white fw-medium">Regístrate y sé de los<br>primeros en enterarte!</h3>
+                    <input class="inpContact text-white" type="text" placeholder="Nombre" required><br>
+                    <input class="inpContact text-white" type="email" placeholder="E-mail" required><br>
+                    <input class="btnContact text-white" type="button" value="Enviar">
+                </form>
+              </div>
+            </section>
+        </div>
     </header>
 
-    <main>
-
+    <main class="text-center bg-black">
+        <section class="secMap mt-5 mb-5">
+            <h3 class="text-white fw-normal fs-2 mb-0">Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27852.935212787328!2d-61.79604811134767!3d-29.234821021806894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94364bbedf0d1245%3A0x435a8f192a243497!2sTostado%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1694550993898!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
+    <footer class="footerIndex bg-black d-flex flex-column">
+        <section class="footerEscritorio h-100">
+          <div class="linksFooter d-flex justify-content-around h-50">
+            <div class="position-relative d-flex flex-column justify-content-center w-100">
+                <ul class="text-center position-absolute">
+                    <li id="logoFooter"><a href="../index.html"><span class="logo">SZ</span></a></li>
+                    <li id="subLogo">de Leandro Sánchez</li>
+                </ul>
+            </div>
+            <div class="position-relative d-flex flex-column justify-content-center w-100">
+                <ul class="text-start position-absolute">
+                    <li><a href="#" class="fw-normal">Sistema</a></li>
+                    <li><a href="#" class="fw-normal">Aplicaión</a></li>
+                    <li><a href="#" class="fw-normal">Sitio Web</a></li>
+                </ul>
+            </div>
+            <div class="position-relative d-flex flex-column justify-content-center w-100">
+                <ul class="text-start position-absolute">
+                    <li><a href="#" class="fw-normal">Guia</a></li>
+                    <li><a href="#" class="fw-normal">Conócenos</a></li>
+                    <li><a href="#" class="fw-normal">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="position-relative d-flex flex-column justify-content-center w-100">
+                <ul class="text-start position-absolute">
+                    <li><a href="#" class="fw-normal">Facebook</a></li>
+                    <li><a href="#" class="fw-normal">Twitter</a></li>
+                    <li><a href="#" class="fw-normal">Instagram</a></li>
+                    <li><a href="#" class="fw-normal">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="position-relative d-flex flex-column justify-content-center w-100">
+                <ul class="text-start position-absolute">
+                    <li><a href="" class="fw-normal">Sostenibilidad</a></li>
+                    <li><a href="" class="fw-normal">Empleo</a></li>
+                </ul>
+            </div>
+          </div>
+          <hr class="hrFooter">
+          <div class="d-flex flex-column justify-content-center align-items-center h-50">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex">
+                    <div class="redSocial">
+                        <a href="#"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="redSocial">
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="redSocial">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="redSocial">
+                        <a href="#"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <div class="cajaP">
+                    <p class="copyright"> ©Copyright All rights reserved </p>
+                </div>
+            </div>
+          </div>
+        </section>
 
-    <footer>
+        <section class="footerMobile h-100">
+          <div class="imgFooter d-flex flex-column align-items-center justify-content-end bg-danger pb-3">
+            <div class="botonRegistrarse mb-1"><a href="#" class="text-white">Registrarme ahora!</a></div>
+            <a href="#" class="text-white mt-2">-  <span class=" fw-medium">SZ</span>  -</a>
+          </div>
+          <div class="bg-black d-flex flex-column pt-3">
+            <div class="text-center p-3"><a href="" class="text-white">leandroukf321@gmail.com</a></div>
+            <div class="text-center p-3"><a href="" class="text-white">+54 3491 43-0789</a></div>
+            <hr class="hrFooter">
+          </div>
         
+          <div class="footerRedes bg-black d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex gap-3 justify-content-center">
+              <div class="red p-2"><a href="#" class="text-white"><i class="fa-brands fa-square-facebook"></i></a></div>
+              <div class="red p-2"><a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a></div>
+              <div class="red p-2"><a href="#" class="text-white"><i class="fa-brands fa-whatsapp"></i></a></div>
+            </div>
+            <div class="mt-4">
+              <p class="copyright"> ©Copyright All rights reserved </p>
+            </div>
+          </div>
+        </section>
     </footer>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
