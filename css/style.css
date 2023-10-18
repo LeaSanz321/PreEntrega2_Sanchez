@@ -143,10 +143,102 @@ a {
   background-size: cover;
   height: 700px;
 }
+.header .principalArea_g {
+  background-color: rgba(15, 15, 15, 0.9215686275);
+  padding-top: 0.4em;
+  padding-right: 0;
+  padding-left: 3.8em;
+}
+.header .principalArea_g .logoMobile {
+  top: 12px;
+  left: 2em;
+  display: none;
+}
+.header .principalArea_g .logoMobile .logo {
+  color: rgba(255, 255, 255, 0.8823529412);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.header .principalArea_g .seccionPrincipal_g .yellowBar_g {
+  background-color: rgba(224, 203, 11, 0.7607843137);
+  width: 55%;
+  height: 50px;
+  bottom: 200px;
+  left: -50px;
+}
+.header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
+  background-image: url(../assets/images/img0025.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.header .principalArea_g .seccionPrincipal_g h1 {
+  font-size: 5.5em;
+  letter-spacing: -5px;
+}
+.header .principalArea_c {
+  background-color: rgba(15, 15, 15, 0.9215686275);
+  padding-top: 0.4em;
+  padding-right: 4em;
+  padding-left: 3.8em;
+}
+.header .principalArea_c .logoMobile {
+  top: 12px;
+  left: 2em;
+  display: none;
+}
+.header .principalArea_c .logoMobile .logo {
+  color: rgba(255, 255, 255, 0.8823529412);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.header .principalArea_c .seccionPrincipal_c h1 {
+  font-size: 5.5em;
+  letter-spacing: -5px;
+}
+.header .principalArea_c .seccionPrincipal_c .yellowBar_c {
+  background-color: rgba(224, 203, 11, 0.7607843137);
+  width: 115px;
+  height: 90%;
+  bottom: 0;
+  left: 94px;
+}
+.header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
+  height: 700px;
+}
+.header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact h3 {
+  font-size: 1.8em;
+}
+.header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact {
+  width: 450px;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px solid rgba(171, 171, 171, 0.6588235294);
+  background: none;
+  margin-top: 30px;
+}
+.header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact::placeholder {
+  color: rgba(171, 171, 171, 0.6588235294);
+  font-weight: light;
+}
+.header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .btnContact {
+  margin-top: 30px;
+  width: 450px;
+  height: 30px;
+  border: none;
+  background-color: #E0CB0B;
+  border-radius: 20px;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
 
 /*MAIN*/
 .main {
   background-color: #000;
+  /*GALERIA*/
+  /*CONTACTO*/
 }
 .main .secEscritorio {
   padding: 40px;
@@ -328,6 +420,16 @@ a {
   margin-top: 18px;
   font-size: 15px;
 }
+.main .contenedorImgGal {
+  height: 520px;
+  width: 420px;
+}
+.main .secMap iframe {
+  border: none;
+  margin-top: 25px;
+  width: 85%;
+  height: 450px;
+}
 
 /*FOOTER*/
 .footerIndex {
@@ -399,136 +501,128 @@ a {
   font-size: 25px;
 }
 
-/*===============================>GALERIA<==================== */
-.principalArea_g {
-  background-color: rgba(15, 15, 15, 0.9215686275);
-  padding-top: 0.4em;
-  padding-right: 0;
-  padding-left: 3.8em;
-}
-
-.seccionPrincipal_g h1 {
-  font-size: 5.5em;
-  letter-spacing: -5px;
-}
-
-.yellowBar_g {
-  background-color: rgba(224, 203, 11, 0.7607843137);
-  width: 55%;
-  height: 50px;
-  bottom: 200px;
-  left: -50px;
-}
-
-.imgPrincipal_g {
-  background-image: url(../assets/images/img0025.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-}
-
-.contenedorImgGal {
-  height: 520px;
-  width: 420px;
-}
-
-/*===============================>CONTACTO<==================== */
-.seccionPrincipal_c h1 {
-  font-size: 5.5em;
-  letter-spacing: -5px;
-}
-
-.imgPrincipal_c {
-  height: 700px;
-}
-
-.yellowBar_c {
-  background-color: rgba(224, 203, 11, 0.7607843137);
-  width: 115px;
-  height: 90%;
-  bottom: 0;
-  left: 94px;
-}
-
-.formContact > h3 {
-  font-size: 1.8em;
-}
-
-.inpContact {
-  width: 450px;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  border: none;
-  border-bottom: 1px solid rgba(171, 171, 171, 0.6588235294);
-  background: none;
-  margin-top: 30px;
-}
-
-.inpContact::placeholder {
-  color: rgba(171, 171, 171, 0.6588235294);
-  font-weight: light;
-}
-
-.btnContact {
-  margin-top: 30px;
-  width: 450px;
-  height: 30px;
-  border: none;
-  background-color: #E0CB0B;
-  border-radius: 20px;
-  font-size: 15px;
-  letter-spacing: -1px;
-}
-
-.secMap iframe {
-  border: none;
-  margin-top: 25px;
-  width: 85%;
-  height: 450px;
-}
-
 /*===============================>MEDIA QUERYS<==================== */
 /*MD*/
 @media screen and (width >= 768px) and (width < 992px) {
   /*HEADER*/
-  .lateralNegro {
+  .header .lateralNegro {
     display: none !important;
   }
-  /*
-  .logoMobile{
-      display: block;
-  }*/
-  .principalArea {
+  .header .principalArea {
     padding-left: 2em;
   }
-  .principalArea .logoMobile {
+  .header .principalArea .logoMobile {
     display: block;
   }
-  .principalArea_m {
-    padding-left: 2em;
-  }
-  .imgPrincipal, .imgPrincipal_ss, .imgPrincipal_m, .imgPrincipal_g {
-    display: none;
-  }
-  .yellowBar {
-    left: 15%;
-  }
-  .yellowBar_m, .yellowBar_ss, .yellowBar_g {
-    width: 92%;
-  }
-  .seccionPrincipal h1 {
+  .header .principalArea .seccionPrincipal h1 {
     font-size: 6em;
     letter-spacing: -5px;
   }
-  .seccionPrincipal_m h1 {
-    font-size: 5em;
-    letter-spacing: -5px;
-  }
-  .seccionPrincipal p {
+  .header .principalArea .seccionPrincipal p {
     font-size: 1.5em;
     letter-spacing: -1px;
   }
+  .header .principalArea .seccionPrincipal .yellowBar {
+    left: 15%;
+  }
+  .header .principalArea .seccionPrincipal .imgPrincipal {
+    display: none;
+  }
+  .header .principalArea_m {
+    padding-left: 2em;
+  }
+  .header .principalArea_m .seccionPrincipal_m h1 {
+    font-size: 5em;
+    letter-spacing: -5px;
+  }
+  .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
+    width: 92%;
+  }
+  .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
+    display: none;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
+    display: none;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
+    width: 92%;
+  }
+  .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
+    width: 92%;
+  }
+  .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
+    display: none;
+  }
+  .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
+    font-size: 70px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
+    height: 400px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
+    width: 90%;
+    height: 18px;
+    top: 190px;
+    left: -20px;
+  }
+  /*
+  .lateralNegro{
+      display: none !important;
+
+  }
+
+  .logoMobile{
+      display: block;
+  }
+  .principalArea{
+      padding-left: 2em;
+      .logoMobile{
+          display: block;
+      }
+  }
+  .principalArea_m {
+      padding-left: 2em;
+  }
+  .imgPrincipal{
+    display: none;
+
+  }
+  .imgPrincipal_ss{
+      display: none;
+
+  }*/
+  /*
+  .imgPrincipal_m{
+      display: none;
+
+  }
+  .imgPrincipal_g{
+      display: none;
+  }*/
+  /*
+  .yellowBar{
+      left: 15%;
+  }
+  .yellowBar_ss{
+      width: 92%;
+  }
+  .yellowBar_g{
+      width: 92%;
+  }*/
+  /*
+  .seccionPrincipal h1 {
+      font-size: 6em;
+      letter-spacing: -5px;
+  }*/
+  /*
+  .seccionPrincipal_m h1{
+      font-size: 5em;
+      letter-spacing: -5px;
+  }
+  .seccionPrincipal p{
+      font-size: 1.5em;
+      letter-spacing: -1px;
+  }*/
   /*MAIN*/
   .main {
     /*SECCIONE UNO*/
@@ -546,30 +640,8 @@ a {
   .main .carruselMobile .carousel-item {
     height: 100vh;
   }
-  /*SECCION CARRUSEL
-  .carruselMobile{
-      display: block!important;
-  }
-  .carousel-item{
-      height: 100vh;
-
-  }*/
-  /*VIDEO*/
-  .secVideo {
+  .main .secVideo {
     display: none !important;
-  }
-  /*CONTACTO*/
-  .imgPrincipal_c {
-    height: 400px;
-  }
-  .yellowBar_c {
-    width: 90%;
-    height: 18px;
-    top: 190px;
-    left: -20px;
-  }
-  .h1Titulo span {
-    font-size: 70px;
   }
 }
 /*SM*/
