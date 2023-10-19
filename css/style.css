@@ -315,20 +315,29 @@ a {
   border-radius: 10px;
 }
 .main .secVideo_m .divVideo .divLogo {
-  margin: 0 30px;
+  /*
+  margin: 0 30px;*/
+  width: 15%;
+  border: 1px solid yellow;
 }
 .main .secVideo_m .divVideo .divLogo .marcaLogo {
-  width: 100px;
-  height: 95px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
 }
 .main .secVideo_m .divTwo_m {
   padding: 15px;
 }
 .main .secVideo_ss {
-  padding: 0 45px;
+  padding: 0 40px;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+.main .secVideo_ss .divVideo_ss {
+  background-color: #1a1a1a;
+  width: 90%;
+  height: 95%;
+  border-radius: 10px;
 }
 .main .secVideo_ss .divTwo_ss {
   padding: 15px;
@@ -336,11 +345,9 @@ a {
 .main .secVideo_ss .divTwo_ss .sanz_ss {
   color: rgba(224, 203, 11, 0.9019607843);
 }
-.main .secVideo_ss .divVideo_ss {
-  background-color: #1a1a1a;
-  width: 90%;
-  height: 90%;
-  border-radius: 10px;
+.main .secVideo_ss .divTwo_ss a {
+  background-color: rgba(224, 203, 11, 0.5882352941);
+  padding: 0 5px;
 }
 .main .secText {
   padding: 55px 50px;
@@ -531,6 +538,9 @@ a {
   .header .principalArea_m {
     padding-left: 2em;
   }
+  .header .principalArea_m .logoMobile {
+    display: block;
+  }
   .header .principalArea_m .seccionPrincipal_m h1 {
     font-size: 5em;
     letter-spacing: -5px;
@@ -541,17 +551,26 @@ a {
   .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
     display: none;
   }
+  .header .principalArea_ss .logoMobile {
+    display: block !important;
+  }
   .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
     display: none;
   }
   .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
     width: 92%;
   }
+  .header .principalArea_g .logoMobile {
+    display: block;
+  }
   .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
     width: 92%;
   }
   .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
     display: none;
+  }
+  .header .principalArea_c .logoMobile {
+    display: block;
   }
   .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
     font-size: 70px;
@@ -565,64 +584,6 @@ a {
     top: 190px;
     left: -20px;
   }
-  /*
-  .lateralNegro{
-      display: none !important;
-
-  }
-
-  .logoMobile{
-      display: block;
-  }
-  .principalArea{
-      padding-left: 2em;
-      .logoMobile{
-          display: block;
-      }
-  }
-  .principalArea_m {
-      padding-left: 2em;
-  }
-  .imgPrincipal{
-    display: none;
-
-  }
-  .imgPrincipal_ss{
-      display: none;
-
-  }*/
-  /*
-  .imgPrincipal_m{
-      display: none;
-
-  }
-  .imgPrincipal_g{
-      display: none;
-  }*/
-  /*
-  .yellowBar{
-      left: 15%;
-  }
-  .yellowBar_ss{
-      width: 92%;
-  }
-  .yellowBar_g{
-      width: 92%;
-  }*/
-  /*
-  .seccionPrincipal h1 {
-      font-size: 6em;
-      letter-spacing: -5px;
-  }*/
-  /*
-  .seccionPrincipal_m h1{
-      font-size: 5em;
-      letter-spacing: -5px;
-  }
-  .seccionPrincipal p{
-      font-size: 1.5em;
-      letter-spacing: -1px;
-  }*/
   /*MAIN*/
   .main {
     /*SECCIONE UNO*/
@@ -643,52 +604,101 @@ a {
   .main .secVideo {
     display: none !important;
   }
+  .main .secVideo_ss {
+    padding: 0 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .main .secVideo_ss .box:nth-child(2) {
+    width: 100% !important;
+    margin-bottom: 40px;
+  }
+  .main .secVideo_ss .divTwo_ss {
+    width: 100% !important;
+  }
+  .main .secVideo_ss .divTwo_ss a {
+    background-color: rgba(224, 203, 11, 0.5882352941);
+    padding: 0 5px;
+  }
 }
 /*SM*/
 @media screen and (width >= 0px) and (width < 768px) {
   /*HEADER*/
-  .lateralNegro {
+  .header .lateralNegro {
     display: none !important;
   }
-  .logoMobile {
-    display: block;
-  }
-  .principalArea {
+  .header .principalArea {
     padding-right: 2em;
     padding-left: 2em;
   }
-  .principalArea .logoMobile {
-    display: block;
+  .header .principalArea .logoMobile {
+    display: block !important;
   }
-  .imgPrincipal, .imgPrincipal_ss, .imgPrincipal_m, .imgPrincipal_g {
-    display: none !important;
-  }
-  .yellowBar, .yellowBar_g {
-    left: 65%;
-    bottom: 0;
-    width: 95px;
-    height: 95%;
-  }
-  .yellowBar_m, .yellowBar_ss {
-    right: 20%;
-    bottom: 0;
-    width: 70px;
-    height: 95%;
-  }
-  .seccionPrincipal h1 {
+  .header .principalArea .seccionPrincipal h1 {
     font-size: 4.2em;
     letter-spacing: -5px;
     margin-left: 5em;
     line-height: 75px;
   }
-  .seccionPrincipal p {
+  .header .principalArea .seccionPrincipal p {
     font-size: 0.9em;
     letter-spacing: -1px;
     margin-left: 10px;
   }
-  .iconTitulo {
-    font-size: 0.6em;
-    margin-left: 0;
+  .header .principalArea .seccionPrincipal .yellowBar {
+    left: 65%;
+    bottom: 0;
+    width: 95px;
+    height: 95%;
+  }
+  .header .principalArea .seccionPrincipal .imgPrincipal {
+    display: none !important;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
+    right: 20%;
+    bottom: 0;
+    width: 70px;
+    height: 95%;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
+    display: none !important;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss h1 .iconTitulo {
+    font-size: 0.8em;
+    margin-left: -20px;
+  }
+  .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
+    left: 10%;
+    bottom: 0;
+    width: 80px;
+    height: 95%;
+  }
+  .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
+    display: none !important;
+  }
+  .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
+    left: 65%;
+    bottom: 0;
+    width: 95px;
+    height: 95%;
+  }
+  .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
+    display: none !important;
+  }
+  .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
+    width: 90%;
+    height: 16px;
+    top: 210px;
+    left: -20px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
+    height: 300px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact h3 {
+    font-size: 1.4em;
+  }
+  .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
+    font-size: 70px;
   }
   /*-----------------------MAIN*/
   .main {
@@ -708,29 +718,60 @@ a {
   .main .carruselMobile {
     display: block !important;
   }
-  /*
-  .carruselMobile{
-      display: block!important;
-  }*/
-  /*VIDEO*/
-  .secVideo {
+  .main .secVideo {
     display: none !important;
   }
-  /*SECCION TEXT*/
-  .secText {
+  .main .secVideo_ss {
+    padding: 0 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .main .secVideo_ss .box:nth-child(2) {
+    /*
+    width: 100% !important;
+    margin-bottom: 40px;*/
+    display: none !important;
+  }
+  .main .secVideo_ss .divTwo_ss {
+    width: 100% !important;
+  }
+  .main .secVideo_ss .divTwo_ss a {
+    background-color: rgba(224, 203, 11, 0.5882352941);
+    padding: 0 5px;
+  }
+  .main .secText {
     padding: 55px 20px;
     height: 350px;
   }
-  .secText > h3 {
+  .main .secText h3 {
     font-size: 2em;
   }
-  .secText > p {
+  .main .secText p {
     font-size: 12px;
   }
-  .secText > h5 {
+  .main .secText h5 {
     font-size: 15px;
   }
-  .secText > button {
+  .main .secText button {
+    width: 350px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .main .secText_ss {
+    padding: 55px 20px;
+    height: 560px;
+    margin-bottom: 50px;
+  }
+  .main .secText_ss h3 {
+    font-size: 2em;
+  }
+  .main .secText_ss p {
+    font-size: 12px;
+  }
+  .main .secText_ss h5 {
+    font-size: 15px;
+  }
+  .main .secText_ss button {
     width: 350px;
     height: 32px;
     font-size: 12px;
@@ -746,30 +787,29 @@ a {
   .footerIndex .footerMobile {
     display: block !important;
   }
-  /*
-  .footerEscritorio{
-      display: none !important;
+  /*CONTACTO
+  .yellowBar_c{
+      width: 90%;
+      height: 16px;
+      top: 210px;
+      left: -20px;
+  }
+  .imgPrincipal_c{
+      height: 300px;
+  }
+  .formContact{
+      h3{
+          font-size: 1.4em;
+
+      }
+
   }
 
-  .footerMobile{
-      display: block !important;
+  .h1Titulo{
+      span{
+          font-size: 70px;
+      }
   }*/
-  /*CONTACTO*/
-  .imgPrincipal_c {
-    height: 300px;
-  }
-  .formContact > h3 {
-    font-size: 1.4em;
-  }
-  .yellowBar_c {
-    width: 90%;
-    height: 16px;
-    top: 210px;
-    left: -20px;
-  }
-  .h1Titulo span {
-    font-size: 70px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
