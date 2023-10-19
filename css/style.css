@@ -307,26 +307,90 @@ a {
   padding: 0 45px;
   margin-top: 30px;
   margin-bottom: 50px;
+  height: 350px;
 }
-.main .secVideo_m .divVideo {
+.main .secVideo_m .divOne_m {
+  width: 100%;
+}
+.main .secVideo_m .divOne_m .divVideo {
   background-color: #1a1a1a;
   width: 90%;
-  height: 300px;
+  height: 280px;
   border-radius: 10px;
+  padding: 0 20px;
 }
-.main .secVideo_m .divVideo .divLogo {
-  /*
-  margin: 0 30px;*/
-  width: 15%;
-  border: 1px solid yellow;
+.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:first-child {
+  background-image: url(../assets/images/logo-nike.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
 }
-.main .secVideo_m .divVideo .divLogo .marcaLogo {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:nth-child(2) {
+  background-image: url(../assets/images/logo-tnf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:nth-child(3) {
+  background-image: url(../assets/images/logo-nautica.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:last-child {
+  background-image: url(../assets/images/logo-adidas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:first-child {
+  background-image: url(../assets/images/logo-fila.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:nth-child(2) {
+  background-image: url(../assets/images/logo-starter.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:nth-child(3) {
+  background-image: url(../assets/images/logo-lacoste.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:last-child {
+  background-image: url(../assets/images/logo-vans.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 25%;
+  height: 75%;
 }
 .main .secVideo_m .divTwo_m {
   padding: 15px;
+}
+.main .secVideo_m .divTwo_m h3 {
+  font-size: 30px;
+}
+.main .secVideo_m .divTwo_m p {
+  font-size: 16px;
 }
 .main .secVideo_ss {
   padding: 0 40px;
@@ -569,6 +633,9 @@ a {
   .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
     display: none;
   }
+  .header .principalArea_c {
+    padding-right: 25px;
+  }
   .header .principalArea_c .logoMobile {
     display: block;
   }
@@ -620,6 +687,23 @@ a {
     background-color: rgba(224, 203, 11, 0.5882352941);
     padding: 0 5px;
   }
+  .main .secVideo_m .divOne_m {
+    width: 100%;
+  }
+  .main .secVideo_m .divOne_m .divVideo {
+    height: 200px;
+    border-radius: 10px;
+    padding: 0 20px;
+  }
+  .main .secVideo_m .divTwo_m {
+    padding: 0 10px;
+  }
+  .main .secVideo_m .divTwo_m h3 {
+    font-size: 25px;
+  }
+  .main .secVideo_m .divTwo_m p {
+    font-size: 12px;
+  }
 }
 /*SM*/
 @media screen and (width >= 0px) and (width < 768px) {
@@ -654,6 +738,9 @@ a {
   .header .principalArea .seccionPrincipal .imgPrincipal {
     display: none !important;
   }
+  .header .principalArea_ss .logoMobile {
+    display: block !important;
+  }
   .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
     right: 20%;
     bottom: 0;
@@ -667,6 +754,9 @@ a {
     font-size: 0.8em;
     margin-left: -20px;
   }
+  .header .principalArea_m .logoMobile {
+    display: block !important;
+  }
   .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
     left: 10%;
     bottom: 0;
@@ -676,6 +766,9 @@ a {
   .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
     display: none !important;
   }
+  .header .principalArea_g .logoMobile {
+    display: block !important;
+  }
   .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
     left: 65%;
     bottom: 0;
@@ -684,6 +777,12 @@ a {
   }
   .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
     display: none !important;
+  }
+  .header .principalArea_c {
+    padding-right: 20px;
+  }
+  .header .principalArea_c .logoMobile {
+    display: block !important;
   }
   .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
     width: 90%;
@@ -697,8 +796,20 @@ a {
   .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact h3 {
     font-size: 1.4em;
   }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact {
+    width: 350px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .btnContact {
+    margin-top: 30px;
+    width: 350px;
+    height: 30px;
+    font-size: 12px;
+  }
   .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
-    font-size: 70px;
+    font-size: 55px;
   }
   /*-----------------------MAIN*/
   .main {
@@ -727,9 +838,6 @@ a {
     margin-bottom: 50px;
   }
   .main .secVideo_ss .box:nth-child(2) {
-    /*
-    width: 100% !important;
-    margin-bottom: 40px;*/
     display: none !important;
   }
   .main .secVideo_ss .divTwo_ss {
@@ -738,6 +846,35 @@ a {
   .main .secVideo_ss .divTwo_ss a {
     background-color: rgba(224, 203, 11, 0.5882352941);
     padding: 0 5px;
+  }
+  .main .secVideo_m {
+    flex-direction: column !important;
+    padding: 25px;
+  }
+  .main .secVideo_m .divOne_m {
+    width: 100%;
+    order: 1;
+  }
+  .main .secVideo_m .divOne_m .divVideo {
+    height: 200px;
+    border-radius: 10px;
+    padding: 0 20px;
+  }
+  .main .secVideo_m .divTwo_m {
+    padding: 0 10px;
+    width: 100%;
+    order: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main .secVideo_m .divTwo_m h3 {
+    font-size: 22px;
+  }
+  .main .secVideo_m .divTwo_m p {
+    font-size: 12px;
+  }
+  .main .secVideo_m .divTwo_m p i {
+    display: none;
   }
   .main .secText {
     padding: 55px 20px;
@@ -776,6 +913,28 @@ a {
     height: 32px;
     font-size: 12px;
   }
+  .main .secText_m {
+    padding: 55px 40px;
+    height: 550px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/img0016.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main .secText_m h3 {
+    font-size: 2.2em;
+  }
+  .main .secText_m p {
+    font-size: 14px;
+    margin: 10px 0 25px;
+  }
+  .main .secText_m h5 {
+    font-size: 15px;
+  }
+  .main .secText_m button {
+    width: 400px;
+    height: 35px;
+    font-size: 13px;
+  }
   /*FOOTER*/
   .footerIndex {
     color: rgba(255, 255, 255, 0.9137254902);
@@ -787,29 +946,6 @@ a {
   .footerIndex .footerMobile {
     display: block !important;
   }
-  /*CONTACTO
-  .yellowBar_c{
-      width: 90%;
-      height: 16px;
-      top: 210px;
-      left: -20px;
-  }
-  .imgPrincipal_c{
-      height: 300px;
-  }
-  .formContact{
-      h3{
-          font-size: 1.4em;
-
-      }
-
-  }
-
-  .h1Titulo{
-      span{
-          font-size: 70px;
-      }
-  }*/
 }
 
 /*# sourceMappingURL=style.css.map */

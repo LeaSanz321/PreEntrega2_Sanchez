@@ -19,7 +19,6 @@ a{
             color: #ffffffe1;
             font-weight:bolder;
             font-size: 25px;
-            
         }
         i{
             font-size: 23px;
@@ -31,7 +30,6 @@ a{
         padding-top: .4em;
         padding-right: 4em;
         padding-left: 3.8em;
-        
         .logoMobile{
             top: 12px;
             left: 2em;
@@ -40,7 +38,6 @@ a{
                 color: #ffffffe1;
                 font-weight:bolder;
                 font-size: 25px;
-                
             }
         }
         .seccionPrincipal{
@@ -66,8 +63,6 @@ a{
                 background-position: top;
             }
         }
-        
-        
     }
     /*SOBRESANZ*/
     .principalArea_ss{
@@ -83,7 +78,6 @@ a{
                 color: #ffffffe1;
                 font-weight:bolder;
                 font-size: 25px;
-                
             }
         }
         .seccionPrincipal_ss{
@@ -105,7 +99,6 @@ a{
                 background-size: cover;
                 background-position-y: 15%;
                 height: 700px;
-                
             }
             .yellowBar_ss{
                 background-color: #e0cb0bc2;
@@ -118,9 +111,7 @@ a{
         .divNav{
             padding-right: 7em;
         }
-        
     }
-    
     .principalArea_m{
         background-color: #0f0f0feb;
         padding-top: .4em;
@@ -134,7 +125,6 @@ a{
                 color: #ffffffe1;
                 font-weight:bolder;
                 font-size: 25px;
-                
             }
         }
         .seccionPrincipal_m{
@@ -154,7 +144,6 @@ a{
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 700px;
-                
             }
         }
     }
@@ -171,7 +160,6 @@ a{
                 color: #ffffffe1;
                 font-weight:bolder;
                 font-size: 25px;
-                
             }
         }
         .seccionPrincipal_g{
@@ -182,7 +170,6 @@ a{
                 bottom: 200px;
                 left: -50px;
             }
-            
             .imgPrincipal_g{
                 background-image:url(../assets/images/img0025.png);
                 background-repeat: no-repeat;
@@ -208,7 +195,6 @@ a{
                 color: #ffffffe1;
                 font-weight:bolder;
                 font-size: 25px;
-                
             }
         }
         .seccionPrincipal_c{
@@ -258,11 +244,7 @@ a{
             }
         }
     }
-    
-    
-    
 }
-
 
 /*MAIN*/
 .main {
@@ -282,7 +264,6 @@ a{
             .subContainer {
                 height: 430px;
                 width: 430px;
-                
             }
         }
     }
@@ -292,7 +273,6 @@ a{
             rgba(0, 0, 0, .5),
             rgba(0, 0, 0, .5),
             rgba(0, 0, 0, .5)
-    
         )
         ,url(../assets/images/img02.jpg);
         background-repeat: no-repeat;
@@ -324,9 +304,8 @@ a{
                 border-radius: 10px;
                 video{
                     width: 45%;
-                 }
-                
-             }
+                }
+            }
         }
         .divTwo{
             padding: 15px;
@@ -336,7 +315,6 @@ a{
             }
             p {
                 font-size: 18px;
-            
             }
         }
     }
@@ -344,33 +322,96 @@ a{
         padding: 0 45px;
         margin-top: 30px;
         margin-bottom: 50px;
-        .divVideo{
-            background-color: #1a1a1a;
-            width: 90%;
-            height: 300px;
-            border-radius: 10px;
-            
-            .divLogo{
-                /*
-                margin: 0 30px;*/
-                width: 15%;
-                border: 1px solid yellow;
-                
-
-               
-                .marcaLogo{
-                    width: 90px;
-                    height: 90px;
-                    object-fit: cover;
-                    
+        height: 350px;
+        .divOne_m{
+            width: 100%;
+            .divVideo{
+                background-color: #1a1a1a;
+                width: 90%;
+                height: 280px;
+                border-radius: 10px;
+                padding: 0 20px;
+                .cajaUno{
+                    .divLogo:first-child{
+                        background-image: url(../assets/images/logo-nike.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                    .divLogo:nth-child(2){
+                        background-image: url(../assets/images/logo-tnf.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                    .divLogo:nth-child(3){
+                        background-image: url(../assets/images/logo-nautica.png);
+                        background-repeat: no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                    .divLogo:last-child{
+                        background-image: url(../assets/images/logo-adidas.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                }
+                .cajaDos{
+                    .divLogo:first-child{
+                        background-image: url(../assets/images/logo-fila.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                    .divLogo:nth-child(2){
+                        background-image: url(../assets/images/logo-starter.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                    .divLogo:nth-child(3){
+                        background-image: url(../assets/images/logo-lacoste.png);
+                        background-repeat: no-repeat;
+                        background-size:contain;
+                        background-position:center;
+                        width: 25%;
+                        height: 75%;
+                    }
+                    .divLogo:last-child{
+                        background-image: url(../assets/images/logo-vans.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        width: 25%;
+                        height: 75%;
+                    }
                 }
             }
-         }
-         .divTwo_m{
+        }
+        .divTwo_m{
             padding: 15px;
+            h3{
+                font-size: 30px;
+                
+            }
+            p{
+                font-size: 16px;
+            }
         }
     }
-   
     .secVideo_ss{
         padding: 0 40px;
         margin-top: 30px;
@@ -492,10 +533,7 @@ a{
             height: 450px;
         }
     }
-
-
 }
-
 
 /*FOOTER*/
 .footerIndex {
@@ -516,12 +554,10 @@ a{
                     color: #ffffffe1;
                     font-weight:bolder;
                     font-size: 25px;
-                    
                 }
                 #subLogo{
                     font-weight: 400;
                     font-size: 10px;
-                    
                 }
             }
         }
@@ -572,22 +608,17 @@ a{
                     font-size: 25px;
                 }
             }
-            
         }
     }
 }
 
-
-
 /*===============================>MEDIA QUERYS<==================== */
-
 /*MD*/
 @media screen and (width >= 768px) and (width < 992px)  {
     /*HEADER*/
     .header{
         .lateralNegro{
             display: none !important;
-            
         }
         .principalArea{
             padding-left: 2em;
@@ -637,11 +668,9 @@ a{
             .seccionPrincipal_ss{
                 .imgPrincipal_ss{
                     display: none;
-              
                 }
                 .yellowBar_ss{
-                    width: 92%;
-                    
+                    width: 92%; 
                 }
             }
         }
@@ -659,6 +688,7 @@ a{
             }
         }
         .principalArea_c{
+            padding-right: 25px;
             .logoMobile{
                 display: block;
             }
@@ -669,7 +699,7 @@ a{
                     }
                 }
                 .imgPrincipal_c{
-                    height: 400px;
+                    height: 400px; 
                 }    
                 .yellowBar_c{
                     width: 90%;
@@ -695,7 +725,6 @@ a{
             display: block!important;
             .carousel-item{
                 height: 100vh;
-                
             }
         }
         .secVideo{
@@ -705,7 +734,6 @@ a{
             padding: 0 30px;
             margin-top: 80px;
             margin-bottom: 50px;
-            
             .box:nth-child(2){
                 width: 100% !important;
                 margin-bottom: 40px;
@@ -719,14 +747,28 @@ a{
             }
         }
         .secVideo_m{
-            
-        }
-        
+            .divOne_m{
+                width: 100%;
+                .divVideo{
+                    height: 200px;
+                    border-radius: 10px;
+                    padding: 0 20px;
+                 }
+            }
+             .divTwo_m{
+                padding: 0 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 12px;   
+                }   
+            }   
+        } 
     }
 }
 
 /*SM*/
-
 @media screen and (width >= 0px) and (width < 768px){
     /*HEADER*/
     .header{
@@ -737,8 +779,7 @@ a{
             padding-right: 2em;
             padding-left: 2em;
             .logoMobile{
-                display: block !important;
-                
+                display: block !important; 
             }
             .seccionPrincipal{
                 h1 {
@@ -748,9 +789,9 @@ a{
                     line-height: 75px;
                 }
                 p{
-                font-size: .9em;
-                letter-spacing: -1px;
-                margin-left: 10px;
+                    font-size: .9em;
+                    letter-spacing: -1px;
+                    margin-left: 10px;
                 }
                 .yellowBar{
                     left: 65%;
@@ -761,10 +802,13 @@ a{
                 .imgPrincipal{
                     display: none !important;
               
-                  }
+                }
             }
         }
         .principalArea_ss{
+            .logoMobile{
+                display: block !important;                
+            }
             .seccionPrincipal_ss{
                 .yellowBar_ss{
                     right: 20%;
@@ -774,7 +818,6 @@ a{
                 }
                 .imgPrincipal_ss{
                     display: none !important;
-              
                 }
                 h1{
                     .iconTitulo{
@@ -785,6 +828,9 @@ a{
             }
         }
         .principalArea_m{
+            .logoMobile{
+                display: block !important;    
+            }
             .seccionPrincipal_m{
                 .yellowBar_m{
                     left: 10%;
@@ -794,11 +840,13 @@ a{
                 }
                 .imgPrincipal_m{
                     display: none !important;
-              
                 }
             }
         }
         .principalArea_g{
+            .logoMobile{
+                display: block !important;
+            }
             .seccionPrincipal_g{
                 .yellowBar_g{
                     left: 65%;
@@ -808,11 +856,15 @@ a{
                 }
                 .imgPrincipal_g{
                     display: none !important;
-              
                 }
             }
         }
         .principalArea_c{
+            padding-right: 20px;
+            .logoMobile{
+                display: block !important;
+                
+            }
             .seccionPrincipal_c{
                 .yellowBar_c{
                     width: 90%;
@@ -825,14 +877,24 @@ a{
                     .formContact{
                         h3{
                             font-size: 1.4em;
-                            
                         }
-                        
+                        .inpContact{
+                            width:350px;
+                            height: 30px;
+                            padding: 5px 10px;
+                            font-size: 10px;  
+                        }
+                        .btnContact{
+                            margin-top:30px;
+                            width: 350px;
+                            height: 30px;
+                            font-size: 12px;
+                        }
                     }
                 }
                 .h1Titulo{
                     span{
-                        font-size: 70px;
+                        font-size: 55px;
                     }
                 }
             }
@@ -864,11 +926,7 @@ a{
             padding: 0 30px;
             margin-top: 80px;
             margin-bottom: 50px;
-            
             .box:nth-child(2){
-                /*
-                width: 100% !important;
-                margin-bottom: 40px;*/
                 display: none !important;
             }
             .divTwo_ss{
@@ -876,6 +934,35 @@ a{
                 a{
                     background-color: #e0cb0b96;
                     padding: 0 5px;
+                }
+            }
+        }
+        .secVideo_m{
+            flex-direction: column !important;
+            padding: 25px;
+            .divOne_m{
+                width: 100%;
+                order: 1;
+                .divVideo{
+                    height: 200px;
+                    border-radius: 10px;
+                    padding: 0 20px;
+                 }
+            }
+             .divTwo_m{
+                padding: 0 10px;
+                width: 100%;
+                order: 0;
+                margin-bottom: 20px;
+                text-align: center;
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 12px;
+                    i{
+                        display: none;
+                    }
                 }
             }
         }
@@ -915,13 +1002,36 @@ a{
                 height: 32px;
                 font-size: 12px;
             }
-            
         }
-        
+        .secText_m{
+            padding: 55px 40px;
+            height: 550px;
+            background-image:linear-gradient(
+            0deg, rgba(0, 0, 0, .7),
+            rgba(0, 0, 0, .7)
+            )
+            ,url(../assets/images/img0016.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            h3{
+                font-size: 2.2em;
+            }
+            p{
+                font-size: 14px;
+                margin: 10px 0 25px;
+            }
+            h5{
+                font-size: 15px;
+            }
+            button{
+                width: 400px;
+                height: 35px;
+                font-size: 13px;
+            }
+        }
     }
 
     /*FOOTER*/
-
     .footerIndex{
         color:#ffffffe9;
         height: 530px;
@@ -932,29 +1042,4 @@ a{
             display: block !important;
         }
     }
-    
-    
-    /*CONTACTO
-    .yellowBar_c{
-        width: 90%;
-        height: 16px;
-        top: 210px;
-        left: -20px;
-    }
-    .imgPrincipal_c{
-        height: 300px;
-    }
-    .formContact{
-        h3{
-            font-size: 1.4em;
-            
-        }
-        
-    }
-    
-    .h1Titulo{
-        span{
-            font-size: 70px;
-        }
-    }*/
 }
