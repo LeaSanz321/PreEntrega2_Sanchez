@@ -1,0 +1,464 @@
+.header{
+    @include contenedorFlexible(row);
+    height: 100vh;
+    background-color: #070707eb;
+    .lateralNegro{
+        @include contenedorFlexible(column);
+        background-color: map-get($mapa-colores, color-negro);
+        height: 100%;
+        width: 4.4em;
+        padding: 1em 0;
+        .logo{
+            color: map-get($mapa-colores, color-logo);
+            font-weight:$fw-bolder;
+            font-size: 25px;
+        }
+        i{
+            font-size: 23px;
+            margin: 15px auto;
+        }
+    }
+    .principalArea {
+        background-color: map-get($mapa-colores, color-areaPrincipal);
+        padding-top: .4em;
+        padding-right: 4em;
+        padding-left: 3.8em;
+        .logoMobile{
+            top: 12px;
+            left: 2em;
+            display: none;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;                                
+            }
+        }
+        .seccionPrincipal{
+            h1 {
+                font-size: $fs-titulosDesktop;
+                letter-spacing: -5px;
+            }
+            p{
+                font-size: 1em;
+                letter-spacing: -1px;
+            }
+            .yellowBar{
+                background-color: map-get($mapa-colores, color-barraPrincipal);
+                width: 115px;
+                height: 90%;
+                bottom: 0;
+                left: 94px;
+            }
+            .imgPrincipal{
+                background-image: url(../assets/images/img0014.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+            }
+        }
+    }
+    /*SOBRESANZ*/
+    .principalArea_ss{
+        @extend .principalArea;
+        padding-right: 0;
+        .logoMobile{
+            top: 12px;
+            left: 2em;
+            display: none;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;
+            }
+        }
+        .seccionPrincipal_ss{
+            h1{
+                font-size: $fs-titulosDesktop;
+                letter-spacing: -5px;
+                .comaTitulo{
+                    color: map-get($mapa-colores, color-barraPrincipal);
+                    font-weight: normal;
+                }
+                .iconTitulo{
+                    font-size: .6em;
+                    margin-left: 25px;
+                }
+            }
+            .imgPrincipal_ss{
+                background-image:url(../assets/images/img0017.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: 15%;
+                height: 700px;
+            }
+            .yellowBar_ss{
+                background-color: map-get($mapa-colores, color-barraPrincipal);
+                width: 55%;
+                height: 46px;
+                bottom: 110px;
+                right: 0px;
+            }
+        }
+        .divNav{
+            padding-right: 7em;
+        }
+    }
+    .principalArea_m{
+        @extend .principalArea;
+        .logoMobile{
+            top: 12px;
+            left: 2em;
+            display: none;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;
+            }
+        }
+        .seccionPrincipal_m{
+            h1{
+                font-size: $fs-titulosDesktop;
+                letter-spacing: -5px;
+            }
+            .yellowBar_m{
+                background-color: map-get($mapa-colores, color-barraPrincipal);
+                width: 55%;
+                height: 50px;
+                bottom: 200px;
+                left: -50px;
+            }
+            .imgPrincipal_m{
+                background-image:url(../assets/images/imgPrincipal.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 700px;
+            }
+        }
+    }
+    .principalArea_g {
+        @extend .principalArea;
+        padding-right: 4em;  
+        .logoMobile{
+            top: 12px;
+            left: 2em;
+            display: none;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;
+            }
+        }
+        .seccionPrincipal_g{
+            .yellowBar_g{
+                background-color: map-get($mapa-colores, color-barraPrincipal);
+                width: 55%;
+                height: 50px;
+                bottom: 200px;
+                left: -50px;
+            }
+            .imgPrincipal_g{
+                background-image:url(../assets/images/img0025.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 700px;
+            }
+            h1{
+                font-size: $fs-titulosDesktop;
+                letter-spacing: -5px;
+            }
+        }
+    }
+    .principalArea_c {
+        @extend .principalArea;
+        .logoMobile{
+            top: 12px;
+            left: 2em;
+            display: none;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;
+            }
+        }
+        .seccionPrincipal_c{
+            h1{
+                font-size: $fs-titulosDesktop;
+                letter-spacing: -5px;
+            }
+            .yellowBar_c{
+                background-color: map-get($mapa-colores, color-barraPrincipal);
+                width: 115px;
+                height: 90%;
+                bottom: 0;
+                left: 94px;
+            }
+            .imgPrincipal_c{
+                height: 700px;
+                .formContact{
+                    h3{
+                        font-size: 1.8em;
+                        
+                    }
+                    .inpContact{
+                        width:450px;
+                        height: 30px;
+                        padding: 5px 10px;
+                        font-size: 12px;
+                        border: none;
+                        border-bottom: 1px solid #abababa8;
+                        background: none;
+                        margin-top: 30px;
+                        &::placeholder{
+                            color: #abababa8;
+                            font-weight: light;
+                        }
+                    }
+                    .btnContact{
+                        margin-top:30px;
+                        width: 450px;
+                        height: 30px;
+                        border: none;
+                        background-color: #E0CB0B;
+                        border-radius: 20px;
+                        font-size: 15px;
+                        letter-spacing: -1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Media Queries*/
+/*MD*/
+@media screen and (width >= 768px) and (width < 992px)  {
+    /*HEADER*/
+    .header{
+        .lateralNegro{
+            display: none !important;
+        }
+        .principalArea{
+            padding-left: 2em;
+            .logoMobile{
+                display: block;
+            }
+            .seccionPrincipal{
+                h1 {
+                    font-size: 6em;
+                    letter-spacing: -5px;
+                }
+                p{
+                    font-size: 1.5em;
+                    letter-spacing: -1px;
+                }
+                .yellowBar{
+                    left: 15%;
+                }
+                .imgPrincipal{
+                    display: none;
+                }
+            }
+        }
+        .principalArea_m {
+            padding-left: 2em;
+            .logoMobile{
+                display: block;
+            }
+            .seccionPrincipal_m{
+                h1{
+                    font-size: 5em;
+                    letter-spacing: -5px;
+                }
+                .yellowBar_m{
+                    width: 92%;
+                }
+                .imgPrincipal_m{
+                    display: none;
+              
+                }
+            }
+        }
+        .principalArea_ss{
+            .logoMobile{
+                display: block !important;
+            }
+            .seccionPrincipal_ss{
+                .imgPrincipal_ss{
+                    display: none;
+                }
+                .yellowBar_ss{
+                    width: 92%; 
+                }
+            }
+        }
+        .principalArea_g{
+            .logoMobile{
+                display: block;
+            }
+            .seccionPrincipal_g{
+                .yellowBar_g{
+                    width: 92%;
+                }
+                .imgPrincipal_g{
+                    display: none;
+                }
+            }
+        }
+        .principalArea_c{
+            padding-right: 25px;
+            .logoMobile{
+                display: block;
+            }
+            .seccionPrincipal_c{
+                .h1Titulo{
+                    span{
+                        font-size: 70px;
+                    }
+                }
+                .imgPrincipal_c{
+                    height: 400px; 
+                }    
+                .yellowBar_c{
+                    width: 90%;
+                    height: 18px;
+                    top: 190px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+/*SM*/
+@media screen and (width >= 0px) and (width < 768px){
+    /*HEADER*/
+    .header{
+        .lateralNegro{
+            display: none !important;
+        }
+        .principalArea {
+            padding-right: 2em;
+            padding-left: 2em;
+            .logoMobile{
+                display: block !important; 
+            }
+            .seccionPrincipal{
+                h1 {
+                    font-size: 4.2em;
+                    letter-spacing: -5px;
+                    margin-left: 5em;
+                    line-height: 75px;
+                }
+                p{
+                    font-size: .9em;
+                    letter-spacing: -1px;
+                    margin-left: 10px;
+                }
+                .yellowBar{
+                    left: 65%;
+                    bottom: 0;
+                    width: 95px;
+                    height: 95%;
+                }
+                .imgPrincipal{
+                    display: none !important;
+              
+                }
+            }
+        }
+        .principalArea_ss{
+            .logoMobile{
+                display: block !important;                
+            }
+            .seccionPrincipal_ss{
+                .yellowBar_ss{
+                    right: 20%;
+                    bottom: 0;
+                    width: 70px;
+                    height: 95%;
+                }
+                .imgPrincipal_ss{
+                    display: none !important;
+                }
+                h1{
+                    .iconTitulo{
+                        font-size: .8em;
+                        margin-left: -20px;
+                    }
+                }                
+            }
+        }
+        .principalArea_m{
+            .logoMobile{
+                display: block !important;    
+            }
+            .seccionPrincipal_m{
+                .yellowBar_m{
+                    left: 10%;
+                    bottom: 0;
+                    width: 80px;
+                    height: 95%;
+                }
+                .imgPrincipal_m{
+                    display: none !important;
+                }
+            }
+        }
+        .principalArea_g{
+            .logoMobile{
+                display: block !important;
+            }
+            .seccionPrincipal_g{
+                .yellowBar_g{
+                    left: 65%;
+                    bottom: 0;
+                    width: 95px;
+                    height: 95%;
+                }
+                .imgPrincipal_g{
+                    display: none !important;
+                }
+            }
+        }
+        .principalArea_c{
+            padding-right: 20px;
+            .logoMobile{
+                display: block !important;
+                
+            }
+            .seccionPrincipal_c{
+                .yellowBar_c{
+                    width: 90%;
+                    height: 16px;
+                    top: 210px;
+                    left: -20px;
+                }
+                .imgPrincipal_c{
+                    height: 300px;
+                    .formContact{
+                        h3{
+                            font-size: 1.4em;
+                        }
+                        .inpContact{
+                            width:350px;
+                            height: 30px;
+                            padding: 5px 10px;
+                            font-size: 10px;  
+                        }
+                        .btnContact{
+                            margin-top:30px;
+                            width: 350px;
+                            height: 30px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .h1Titulo{
+                    span{
+                        font-size: 55px;
+                    }
+                }
+            }
+        }
+    }   
+}

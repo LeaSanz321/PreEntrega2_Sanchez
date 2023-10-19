@@ -9,11 +9,15 @@ a {
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
   height: 100vh;
   background-color: rgba(7, 7, 7, 0.9215686275);
   /*SOBRESANZ*/
 }
 .header .lateralNegro {
+  display: flex;
+  flex-direction: column;
   background-color: #000;
   height: 100%;
   width: 4.4em;
@@ -28,48 +32,45 @@ a {
   font-size: 23px;
   margin: 15px auto;
 }
-.header .principalArea {
+.header .principalArea, .header .principalArea_c, .header .principalArea_g, .header .principalArea_m, .header .principalArea_ss {
   background-color: rgba(15, 15, 15, 0.9215686275);
   padding-top: 0.4em;
   padding-right: 4em;
   padding-left: 3.8em;
 }
-.header .principalArea .logoMobile {
+.header .principalArea .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_ss .logoMobile {
   top: 12px;
   left: 2em;
   display: none;
 }
-.header .principalArea .logoMobile .logo {
+.header .principalArea .logoMobile .logo, .header .principalArea_c .logoMobile .logo, .header .principalArea_g .logoMobile .logo, .header .principalArea_m .logoMobile .logo, .header .principalArea_ss .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
-.header .principalArea .seccionPrincipal h1 {
+.header .principalArea .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
-.header .principalArea .seccionPrincipal p {
+.header .principalArea .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p {
   font-size: 1em;
   letter-spacing: -1px;
 }
-.header .principalArea .seccionPrincipal .yellowBar {
+.header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 115px;
   height: 90%;
   bottom: 0;
   left: 94px;
 }
-.header .principalArea .seccionPrincipal .imgPrincipal {
+.header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal {
   background-image: url(../assets/images/img0014.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 .header .principalArea_ss {
-  background-color: rgba(15, 15, 15, 0.9215686275);
-  padding-top: 0.4em;
   padding-right: 0;
-  padding-left: 3.8em;
 }
 .header .principalArea_ss .logoMobile {
   top: 12px;
@@ -110,12 +111,6 @@ a {
 .header .principalArea_ss .divNav {
   padding-right: 7em;
 }
-.header .principalArea_m {
-  background-color: rgba(15, 15, 15, 0.9215686275);
-  padding-top: 0.4em;
-  padding-right: 0;
-  padding-left: 3.8em;
-}
 .header .principalArea_m .logoMobile {
   top: 12px;
   left: 2em;
@@ -144,10 +139,7 @@ a {
   height: 700px;
 }
 .header .principalArea_g {
-  background-color: rgba(15, 15, 15, 0.9215686275);
-  padding-top: 0.4em;
-  padding-right: 0;
-  padding-left: 3.8em;
+  padding-right: 4em;
 }
 .header .principalArea_g .logoMobile {
   top: 12px;
@@ -175,12 +167,6 @@ a {
 .header .principalArea_g .seccionPrincipal_g h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
-}
-.header .principalArea_c {
-  background-color: rgba(15, 15, 15, 0.9215686275);
-  padding-top: 0.4em;
-  padding-right: 4em;
-  padding-left: 3.8em;
 }
 .header .principalArea_c .logoMobile {
   top: 12px;
@@ -234,9 +220,196 @@ a {
   letter-spacing: -1px;
 }
 
-/*MAIN*/
+/*Media Queries*/
+/*MD*/
+@media screen and (width >= 768px) and (width < 992px) {
+  /*HEADER*/
+  .header .lateralNegro {
+    display: none !important;
+  }
+  .header .principalArea, .header .principalArea_ss, .header .principalArea_m, .header .principalArea_g, .header .principalArea_c {
+    padding-left: 2em;
+  }
+  .header .principalArea .logoMobile, .header .principalArea_ss .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_c .logoMobile {
+    display: block;
+  }
+  .header .principalArea .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1 {
+    font-size: 6em;
+    letter-spacing: -5px;
+  }
+  .header .principalArea .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p {
+    font-size: 1.5em;
+    letter-spacing: -1px;
+  }
+  .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar {
+    left: 15%;
+  }
+  .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal {
+    display: none;
+  }
+  .header .principalArea_m {
+    padding-left: 2em;
+  }
+  .header .principalArea_m .logoMobile {
+    display: block;
+  }
+  .header .principalArea_m .seccionPrincipal_m h1 {
+    font-size: 5em;
+    letter-spacing: -5px;
+  }
+  .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
+    width: 92%;
+  }
+  .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
+    display: none;
+  }
+  .header .principalArea_ss .logoMobile {
+    display: block !important;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
+    display: none;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
+    width: 92%;
+  }
+  .header .principalArea_g .logoMobile {
+    display: block;
+  }
+  .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
+    width: 92%;
+  }
+  .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
+    display: none;
+  }
+  .header .principalArea_c {
+    padding-right: 25px;
+  }
+  .header .principalArea_c .logoMobile {
+    display: block;
+  }
+  .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
+    font-size: 70px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
+    height: 400px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
+    width: 90%;
+    height: 18px;
+    top: 190px;
+    left: -20px;
+  }
+}
+/*SM*/
+@media screen and (width >= 0px) and (width < 768px) {
+  /*HEADER*/
+  .header .lateralNegro {
+    display: none !important;
+  }
+  .header .principalArea, .header .principalArea_ss, .header .principalArea_m, .header .principalArea_g, .header .principalArea_c {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  .header .principalArea .logoMobile, .header .principalArea_ss .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_c .logoMobile {
+    display: block !important;
+  }
+  .header .principalArea .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1 {
+    font-size: 4.2em;
+    letter-spacing: -5px;
+    margin-left: 5em;
+    line-height: 75px;
+  }
+  .header .principalArea .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p {
+    font-size: 0.9em;
+    letter-spacing: -1px;
+    margin-left: 10px;
+  }
+  .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar {
+    left: 65%;
+    bottom: 0;
+    width: 95px;
+    height: 95%;
+  }
+  .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal {
+    display: none !important;
+  }
+  .header .principalArea_ss .logoMobile {
+    display: block !important;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
+    right: 20%;
+    bottom: 0;
+    width: 70px;
+    height: 95%;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
+    display: none !important;
+  }
+  .header .principalArea_ss .seccionPrincipal_ss h1 .iconTitulo {
+    font-size: 0.8em;
+    margin-left: -20px;
+  }
+  .header .principalArea_m .logoMobile {
+    display: block !important;
+  }
+  .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
+    left: 10%;
+    bottom: 0;
+    width: 80px;
+    height: 95%;
+  }
+  .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
+    display: none !important;
+  }
+  .header .principalArea_g .logoMobile {
+    display: block !important;
+  }
+  .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
+    left: 65%;
+    bottom: 0;
+    width: 95px;
+    height: 95%;
+  }
+  .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
+    display: none !important;
+  }
+  .header .principalArea_c {
+    padding-right: 20px;
+  }
+  .header .principalArea_c .logoMobile {
+    display: block !important;
+  }
+  .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
+    width: 90%;
+    height: 16px;
+    top: 210px;
+    left: -20px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
+    height: 300px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact h3 {
+    font-size: 1.4em;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact {
+    width: 350px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .btnContact {
+    margin-top: 30px;
+    width: 350px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
+    font-size: 55px;
+  }
+}
 .main {
   background-color: #000;
+  /*NO PUDE INCLUIR '@EXTEND' EN LOS H3, P, H5, BUTTON*/
   /*GALERIA*/
   /*CONTACTO*/
 }
@@ -319,32 +492,26 @@ a {
   border-radius: 10px;
   padding: 0 20px;
 }
-.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:first-child {
-  background-image: url(../assets/images/logo-nike.png);
+.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   width: 25%;
   height: 75%;
+}
+.main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:first-child {
+  background-image: url(../assets/images/logo-nike.png);
 }
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:nth-child(2) {
   background-image: url(../assets/images/logo-tnf.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 25%;
-  height: 75%;
 }
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:nth-child(3) {
   background-image: url(../assets/images/logo-nautica.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 25%;
-  height: 75%;
 }
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:last-child {
   background-image: url(../assets/images/logo-adidas.png);
+}
+.main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -353,35 +520,15 @@ a {
 }
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:first-child {
   background-image: url(../assets/images/logo-fila.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 25%;
-  height: 75%;
 }
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:nth-child(2) {
   background-image: url(../assets/images/logo-starter.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 25%;
-  height: 75%;
 }
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:nth-child(3) {
   background-image: url(../assets/images/logo-lacoste.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 25%;
-  height: 75%;
 }
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:last-child {
   background-image: url(../assets/images/logo-vans.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 25%;
-  height: 75%;
 }
 .main .secVideo_m .divTwo_m {
   padding: 15px;
@@ -417,18 +564,18 @@ a {
   padding: 55px 50px;
   height: 350px;
 }
-.main .secText h3 {
+.main .secText .h3_sectext {
   font-size: 2.5em;
   letter-spacing: -5px;
 }
-.main .secText p {
+.main .secText .p_secText {
   font-size: 16px;
   margin: 8px auto 25px;
 }
-.main .secText h5 {
+.main .secText .h5_secText {
   font-size: 20px;
 }
-.main .secText button {
+.main .secText .btn_secText {
   width: 550px;
   height: 40px;
   border-style: none;
@@ -444,18 +591,18 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main .secText_ss h3 {
+.main .secText_ss .h3_st_ss {
   font-size: 2.5em;
   letter-spacing: -5px;
 }
-.main .secText_ss p {
+.main .secText_ss .p_st_ss {
   font-size: 16px;
   margin: 8px auto 25px;
 }
-.main .secText_ss h5 {
+.main .secText_ss .h5_st_ss {
   font-size: 20px;
 }
-.main .secText_ss button {
+.main .secText_ss .btn_st_ss {
   width: 550px;
   height: 40px;
   border-style: none;
@@ -475,14 +622,14 @@ a {
   font-size: 2.5em;
   letter-spacing: -5px;
 }
-.main .secText_m p {
+.main .secText_m .p_st_m {
   font-size: 16px;
   margin: 8px auto 25px;
 }
-.main .secText_m h5 {
+.main .secText_m .h5_st_m {
   font-size: 20px;
 }
-.main .secText_m button {
+.main .secText_m .btn_st_m {
   width: 550px;
   height: 40px;
   border-style: none;
@@ -502,158 +649,10 @@ a {
   height: 450px;
 }
 
-/*FOOTER*/
-.footerIndex {
-  color: rgba(255, 255, 255, 0.9137254902);
-  height: 530px;
-}
-.footerIndex .footerEscritorio .linksFooter ul {
-  top: 30%;
-  line-height: 30px;
-  list-style-type: none;
-}
-.footerIndex .footerEscritorio .linksFooter ul a {
-  font-size: 14px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.9137254902);
-}
-.footerIndex .footerEscritorio .linksFooter ul .logo {
-  color: rgba(255, 255, 255, 0.8823529412);
-  font-weight: bolder;
-  font-size: 25px;
-}
-.footerIndex .footerEscritorio .linksFooter ul #subLogo {
-  font-weight: 400;
-  font-size: 10px;
-}
-.footerIndex .footerEscritorio .hrFooter {
-  background-color: rgb(139, 139, 139);
-  width: 95%;
-  margin: auto;
-  color: #000;
-  height: 1px;
-}
-.footerIndex .footerEscritorio .redSocial {
-  border: 2px solid white;
-  border-radius: 50%;
-  padding: 15px;
-  margin: 0 6px;
-}
-.footerIndex .footerEscritorio .redSocial a {
-  color: #FFF;
-  text-decoration: none;
-  font-size: 25px;
-}
-.footerIndex .footerEscritorio .cajaP {
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.768627451);
-}
-.footerIndex .footerMobile {
-  display: none !important;
-}
-.footerIndex .footerMobile .imgFooter {
-  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(../assets/images/gato2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70vh;
-}
-.footerIndex .footerMobile .imgFooter .botonRegistrarse {
-  border: 2px solid #FFF;
-  padding: 8px 30px;
-}
-.footerIndex .footerMobile .footerRedes {
-  height: 28vh;
-}
-.footerIndex .footerMobile .footerRedes .red {
-  border: 2px solid #FFF;
-  border-radius: 50%;
-}
-.footerIndex .footerMobile .footerRedes .red i {
-  font-size: 25px;
-}
-
-/*===============================>MEDIA QUERYS<==================== */
+/*Media Queries*/
 /*MD*/
 @media screen and (width >= 768px) and (width < 992px) {
-  /*HEADER*/
-  .header .lateralNegro {
-    display: none !important;
-  }
-  .header .principalArea {
-    padding-left: 2em;
-  }
-  .header .principalArea .logoMobile {
-    display: block;
-  }
-  .header .principalArea .seccionPrincipal h1 {
-    font-size: 6em;
-    letter-spacing: -5px;
-  }
-  .header .principalArea .seccionPrincipal p {
-    font-size: 1.5em;
-    letter-spacing: -1px;
-  }
-  .header .principalArea .seccionPrincipal .yellowBar {
-    left: 15%;
-  }
-  .header .principalArea .seccionPrincipal .imgPrincipal {
-    display: none;
-  }
-  .header .principalArea_m {
-    padding-left: 2em;
-  }
-  .header .principalArea_m .logoMobile {
-    display: block;
-  }
-  .header .principalArea_m .seccionPrincipal_m h1 {
-    font-size: 5em;
-    letter-spacing: -5px;
-  }
-  .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
-    width: 92%;
-  }
-  .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
-    display: none;
-  }
-  .header .principalArea_ss .logoMobile {
-    display: block !important;
-  }
-  .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
-    display: none;
-  }
-  .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
-    width: 92%;
-  }
-  .header .principalArea_g .logoMobile {
-    display: block;
-  }
-  .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
-    width: 92%;
-  }
-  .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
-    display: none;
-  }
-  .header .principalArea_c {
-    padding-right: 25px;
-  }
-  .header .principalArea_c .logoMobile {
-    display: block;
-  }
-  .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
-    font-size: 70px;
-  }
-  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
-    height: 400px;
-  }
-  .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
-    width: 90%;
-    height: 18px;
-    top: 190px;
-    left: -20px;
-  }
-  /*MAIN*/
   .main {
-    /*SECCIONE UNO*/
     /*SECCION CARRUSEL*/
   }
   .main .secEscritorio {
@@ -707,111 +706,6 @@ a {
 }
 /*SM*/
 @media screen and (width >= 0px) and (width < 768px) {
-  /*HEADER*/
-  .header .lateralNegro {
-    display: none !important;
-  }
-  .header .principalArea {
-    padding-right: 2em;
-    padding-left: 2em;
-  }
-  .header .principalArea .logoMobile {
-    display: block !important;
-  }
-  .header .principalArea .seccionPrincipal h1 {
-    font-size: 4.2em;
-    letter-spacing: -5px;
-    margin-left: 5em;
-    line-height: 75px;
-  }
-  .header .principalArea .seccionPrincipal p {
-    font-size: 0.9em;
-    letter-spacing: -1px;
-    margin-left: 10px;
-  }
-  .header .principalArea .seccionPrincipal .yellowBar {
-    left: 65%;
-    bottom: 0;
-    width: 95px;
-    height: 95%;
-  }
-  .header .principalArea .seccionPrincipal .imgPrincipal {
-    display: none !important;
-  }
-  .header .principalArea_ss .logoMobile {
-    display: block !important;
-  }
-  .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
-    right: 20%;
-    bottom: 0;
-    width: 70px;
-    height: 95%;
-  }
-  .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
-    display: none !important;
-  }
-  .header .principalArea_ss .seccionPrincipal_ss h1 .iconTitulo {
-    font-size: 0.8em;
-    margin-left: -20px;
-  }
-  .header .principalArea_m .logoMobile {
-    display: block !important;
-  }
-  .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
-    left: 10%;
-    bottom: 0;
-    width: 80px;
-    height: 95%;
-  }
-  .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
-    display: none !important;
-  }
-  .header .principalArea_g .logoMobile {
-    display: block !important;
-  }
-  .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
-    left: 65%;
-    bottom: 0;
-    width: 95px;
-    height: 95%;
-  }
-  .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
-    display: none !important;
-  }
-  .header .principalArea_c {
-    padding-right: 20px;
-  }
-  .header .principalArea_c .logoMobile {
-    display: block !important;
-  }
-  .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
-    width: 90%;
-    height: 16px;
-    top: 210px;
-    left: -20px;
-  }
-  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
-    height: 300px;
-  }
-  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact h3 {
-    font-size: 1.4em;
-  }
-  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact {
-    width: 350px;
-    height: 30px;
-    padding: 5px 10px;
-    font-size: 10px;
-  }
-  .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .btnContact {
-    margin-top: 30px;
-    width: 350px;
-    height: 30px;
-    font-size: 12px;
-  }
-  .header .principalArea_c .seccionPrincipal_c .h1Titulo span {
-    font-size: 55px;
-  }
-  /*-----------------------MAIN*/
   .main {
     /*SECCION UNO*/
     /*SECCION CARRUSEL*/
@@ -935,7 +829,79 @@ a {
     height: 35px;
     font-size: 13px;
   }
-  /*FOOTER*/
+}
+.footerIndex {
+  color: rgba(255, 255, 255, 0.9137254902);
+  height: 530px;
+}
+.footerIndex .footerEscritorio .linksFooter ul {
+  top: 30%;
+  line-height: 30px;
+  list-style-type: none;
+}
+.footerIndex .footerEscritorio .linksFooter ul a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9137254902);
+}
+.footerIndex .footerEscritorio .linksFooter ul .logo {
+  color: rgba(255, 255, 255, 0.8823529412);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.footerIndex .footerEscritorio .linksFooter ul #subLogo {
+  font-weight: 400;
+  font-size: 10px;
+}
+.footerIndex .footerEscritorio .hrFooter {
+  background-color: rgb(139, 139, 139);
+  width: 95%;
+  margin: auto;
+  color: #000;
+  height: 1px;
+}
+.footerIndex .footerEscritorio .redSocial {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0 6px;
+}
+.footerIndex .footerEscritorio .redSocial a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+.footerIndex .footerEscritorio .cajaP {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.768627451);
+}
+.footerIndex .footerMobile {
+  display: none !important;
+}
+.footerIndex .footerMobile .imgFooter {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(../assets/images/gato2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+.footerIndex .footerMobile .imgFooter .botonRegistrarse {
+  border: 2px solid #fff;
+  padding: 8px 30px;
+}
+.footerIndex .footerMobile .footerRedes {
+  height: 28vh;
+}
+.footerIndex .footerMobile .footerRedes .red {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.footerIndex .footerMobile .footerRedes .red i {
+  font-size: 25px;
+}
+
+/*Media Queries*/
+/*SM*/
+@media screen and (width >= 0px) and (width < 768px) {
   .footerIndex {
     color: rgba(255, 255, 255, 0.9137254902);
     height: 530px;

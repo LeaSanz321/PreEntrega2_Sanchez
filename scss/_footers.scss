@@ -1,0 +1,91 @@
+.footerIndex {
+    color:#ffffffe9;
+    height: 530px;
+    .footerEscritorio{
+        .linksFooter{
+            ul{
+                top: 30%;
+                line-height: 30px;
+                list-style-type: none;
+                a{
+                    font-size: 14px;
+                    text-decoration: none;
+                    color:#ffffffe9;
+                }
+                .logo{
+                    color: map-get($mapa-colores, color-logo);
+                    font-weight:$fw-bolder;
+                    font-size: 25px;
+                }
+                #subLogo{
+                    font-weight: 400;
+                    font-size: 10px;
+                }
+            }
+        }
+        .hrFooter{
+            background-color: rgb(139, 139, 139);
+            width: 95%;
+            margin: auto;
+            color: map-get($mapa-colores, color-negro);
+            height: 1px;    
+        }
+        .redSocial{
+            border: 2px solid map-get($mapa-colores, color-blanco);
+            border-radius: 50%;
+            padding: 15px;
+            margin: 0 6px;
+            a{
+                color: map-get($mapa-colores, color-blanco);
+                text-decoration: none;
+                font-size: 25px;
+            }
+        }
+        .cajaP{
+            margin-top: 20px;
+            color: #ffffffc4;
+        }
+    }
+    .footerMobile{
+        display: none !important;
+        .imgFooter{
+            background-image:linear-gradient(
+            0deg, rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, .2)
+            )
+            ,url(../assets/images/gato2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            .botonRegistrarse{
+                border: 2px solid map-get($mapa-colores, color-blanco);
+                padding: 8px 30px;
+            }
+        }
+        .footerRedes{
+            height: 28vh;
+            .red{
+                border: 2px solid map-get($mapa-colores, color-blanco);
+                border-radius: 50%;
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+/*Media Queries*/
+/*SM*/
+@media screen and (width >= 0px) and (width < 768px){
+    .footerIndex{
+        color:#ffffffe9;
+        height: 530px;
+        .footerEscritorio{
+            display: none !important;
+        }
+        .footerMobile{
+            display: block !important;
+        }
+    }
+}

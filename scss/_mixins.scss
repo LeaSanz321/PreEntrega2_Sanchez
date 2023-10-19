@@ -1,0 +1,12 @@
+@mixin contenedorFlexible($f-dir){
+    display: flex;
+    flex-direction: $f-dir;
+}
+
+@mixin bg-img00($bg-repeat, $bg-size, $bg-position, $w, $h){
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
+    background-position: $bg-position;
+    width: $w;
+    height: $h;
+}
