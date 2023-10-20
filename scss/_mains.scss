@@ -177,6 +177,9 @@
             background-color: map-get($mapa-colores, color-button);
             margin-top: 18px;
             font-size: 15px;
+            &:hover{
+                background-color: #e0cb0bc4;
+            }
         }
     }
     .secText_ss{
@@ -208,6 +211,9 @@
             background-color: map-get($mapa-colores, color-button);
             margin-top: 18px;
             font-size: 15px;
+            &:hover{
+                background-color: #e0cb0bc4;
+            }
         }
     }
     .secText_m{
@@ -239,6 +245,9 @@
             background-color: map-get($mapa-colores, color-button);
             margin-top: 18px;
             font-size: 15px;
+            &:hover{
+                background-color: #e0cb0bc4;
+            }
         }
     }
     /*GALERIA*/

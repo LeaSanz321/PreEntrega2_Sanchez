@@ -48,6 +48,8 @@
                 height: 90%;
                 bottom: 0;
                 left: 94px;
+                animation-name: deslizY;
+                animation-duration: 2s;
             }
             .imgPrincipal{
                 background-image: url(../assets/images/img0014.png);
@@ -97,6 +99,9 @@
                 height: 46px;
                 bottom: 110px;
                 right: 0px;
+                animation-name: deslizX;
+                animation-duration: 2s;
+
             }
         }
         .divNav{
@@ -126,6 +131,8 @@
                 height: 50px;
                 bottom: 200px;
                 left: -50px;
+                animation-name: desliz-X;
+                animation-duration: 2s;
             }
             .imgPrincipal_m{
                 background-image:url(../assets/images/imgPrincipal.png);
@@ -155,6 +162,8 @@
                 height: 50px;
                 bottom: 200px;
                 left: -50px;
+                animation-name: desliz-X;
+                animation-duration: 2s;
             }
             .imgPrincipal_g{
                 background-image:url(../assets/images/img0025.png);
@@ -191,6 +200,9 @@
                 height: 90%;
                 bottom: 0;
                 left: 94px;
+                animation-name: deslizY;
+                animation-duration: 2s;
+
             }
             .imgPrincipal_c{
                 height: 700px;
@@ -323,6 +335,8 @@
                     height: 18px;
                     top: 190px;
                     left: -20px;
+                    animation-name: desliz-X;
+                    animation-duration: 2s;
                 }
             }
         }
@@ -376,6 +390,8 @@
                     bottom: 0;
                     width: 70px;
                     height: 95%;
+                    animation-name: deslizY;
+                    animation-duration: 2s;
                 }
                 .imgPrincipal_ss{
                     display: none !important;
@@ -398,6 +414,8 @@
                     bottom: 0;
                     width: 80px;
                     height: 95%;
+                    animation-name: deslizY;
+                    animation-duration: 2s;
                 }
                 .imgPrincipal_m{
                     display: none !important;
@@ -414,6 +432,8 @@
                     bottom: 0;
                     width: 95px;
                     height: 95%;
+                    animation-name: deslizY;
+                    animation-duration: 2s;
                 }
                 .imgPrincipal_g{
                     display: none !important;
@@ -432,6 +452,8 @@
                     height: 16px;
                     top: 210px;
                     left: -20px;
+                    animation-name: desliz-X;
+                    animation-duration: 2s;
                 }
                 .imgPrincipal_c{
                     height: 300px;

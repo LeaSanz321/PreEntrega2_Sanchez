@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;400;500;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@keyframes deslizY {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes deslizX {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes desliz-X {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 body {
   font-family: "Lexend Exa", sans-serif;
 }
@@ -62,6 +86,8 @@ a {
   height: 90%;
   bottom: 0;
   left: 94px;
+  animation-name: deslizY;
+  animation-duration: 2s;
 }
 .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal {
   background-image: url(../assets/images/img0014.png);
@@ -107,6 +133,8 @@ a {
   height: 46px;
   bottom: 110px;
   right: 0px;
+  animation-name: deslizX;
+  animation-duration: 2s;
 }
 .header .principalArea_ss .divNav {
   padding-right: 7em;
@@ -131,6 +159,8 @@ a {
   height: 50px;
   bottom: 200px;
   left: -50px;
+  animation-name: desliz-X;
+  animation-duration: 2s;
 }
 .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
   background-image: url(../assets/images/imgPrincipal.png);
@@ -157,6 +187,8 @@ a {
   height: 50px;
   bottom: 200px;
   left: -50px;
+  animation-name: desliz-X;
+  animation-duration: 2s;
 }
 .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
   background-image: url(../assets/images/img0025.png);
@@ -188,6 +220,8 @@ a {
   height: 90%;
   bottom: 0;
   left: 94px;
+  animation-name: deslizY;
+  animation-duration: 2s;
 }
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
   height: 700px;
@@ -298,6 +332,8 @@ a {
     height: 18px;
     top: 190px;
     left: -20px;
+    animation-name: desliz-X;
+    animation-duration: 2s;
   }
 }
 /*SM*/
@@ -341,6 +377,8 @@ a {
     bottom: 0;
     width: 70px;
     height: 95%;
+    animation-name: deslizY;
+    animation-duration: 2s;
   }
   .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
     display: none !important;
@@ -357,6 +395,8 @@ a {
     bottom: 0;
     width: 80px;
     height: 95%;
+    animation-name: deslizY;
+    animation-duration: 2s;
   }
   .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
     display: none !important;
@@ -369,6 +409,8 @@ a {
     bottom: 0;
     width: 95px;
     height: 95%;
+    animation-name: deslizY;
+    animation-duration: 2s;
   }
   .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
     display: none !important;
@@ -384,6 +426,8 @@ a {
     height: 16px;
     top: 210px;
     left: -20px;
+    animation-name: desliz-X;
+    animation-duration: 2s;
   }
   .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
     height: 300px;
@@ -584,6 +628,9 @@ a {
   margin-top: 18px;
   font-size: 15px;
 }
+.main .secText .btn_secText:hover {
+  background-color: rgba(224, 203, 11, 0.768627451);
+}
 .main .secText_ss {
   padding: 55px 50px;
   height: 550px;
@@ -611,6 +658,9 @@ a {
   margin-top: 18px;
   font-size: 15px;
 }
+.main .secText_ss .btn_st_ss:hover {
+  background-color: rgba(224, 203, 11, 0.768627451);
+}
 .main .secText_m {
   padding: 55px 50px;
   height: 550px;
@@ -637,6 +687,9 @@ a {
   background-color: rgba(224, 203, 11, 0.9019607843);
   margin-top: 18px;
   font-size: 15px;
+}
+.main .secText_m .btn_st_m:hover {
+  background-color: rgba(224, 203, 11, 0.768627451);
 }
 .main .contenedorImgGal {
   height: 520px;
