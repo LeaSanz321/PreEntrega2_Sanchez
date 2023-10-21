@@ -394,16 +394,16 @@
         .secText {
             padding: 55px 20px;
             height: 350px;
-            h3{
+            .h3_sectext{
                 font-size: 2em;
             }
-            p{
+            .p_secText{
                 font-size: 12px;
             }
-            h5{
+            .h5_secText{
                 font-size: 15px;
             }
-            button {
+            .btn_secText{
                 width: 350px;
                 height: 32px;
                 font-size: 12px;
@@ -413,16 +413,16 @@
             padding: 55px 20px;
             height: 560px;
             margin-bottom: 50px;
-            h3{
+            .h3_st_ss{
                 font-size: 2em;
             }
-            p{
+            .p_st_ss{
                 font-size: 12px;
             }
-            h5{
+            .h5_st_ss{
                 font-size: 15px;
             }
-            button {
+            .btn_st_ss{
                 width: 350px;
                 height: 32px;
                 font-size: 12px;
@@ -438,17 +438,17 @@
             ,url(../assets/images/img0016.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            h3{
+            .h3_st_m{
                 font-size: 2.2em;
             }
-            p{
+            .p_st_m{
                 font-size: 14px;
                 margin: 10px 0 25px;
             }
-            h5{
+            .h5_st_m{
                 font-size: 15px;
             }
-            button{
+            .btn_st_m{
                 width: 400px;
                 height: 35px;
                 font-size: 13px;

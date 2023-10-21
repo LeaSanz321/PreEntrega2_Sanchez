@@ -63,8 +63,8 @@ a {
   padding-left: 3.8em;
 }
 .header .principalArea .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_ss .logoMobile {
-  top: 12px;
-  left: 2em;
+  /* top: 12px;
+   left: 2em;*/
   display: none;
 }
 .header .principalArea .logoMobile .logo, .header .principalArea_c .logoMobile .logo, .header .principalArea_g .logoMobile .logo, .header .principalArea_m .logoMobile .logo, .header .principalArea_ss .logoMobile .logo {
@@ -827,16 +827,16 @@ a {
     padding: 55px 20px;
     height: 350px;
   }
-  .main .secText h3 {
+  .main .secText .h3_sectext {
     font-size: 2em;
   }
-  .main .secText p {
+  .main .secText .p_secText {
     font-size: 12px;
   }
-  .main .secText h5 {
+  .main .secText .h5_secText {
     font-size: 15px;
   }
-  .main .secText button {
+  .main .secText .btn_secText {
     width: 350px;
     height: 32px;
     font-size: 12px;
@@ -846,16 +846,16 @@ a {
     height: 560px;
     margin-bottom: 50px;
   }
-  .main .secText_ss h3 {
+  .main .secText_ss .h3_st_ss {
     font-size: 2em;
   }
-  .main .secText_ss p {
+  .main .secText_ss .p_st_ss {
     font-size: 12px;
   }
-  .main .secText_ss h5 {
+  .main .secText_ss .h5_st_ss {
     font-size: 15px;
   }
-  .main .secText_ss button {
+  .main .secText_ss .btn_st_ss {
     width: 350px;
     height: 32px;
     font-size: 12px;
@@ -867,17 +867,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .main .secText_m h3 {
+  .main .secText_m .h3_st_m {
     font-size: 2.2em;
   }
-  .main .secText_m p {
+  .main .secText_m .p_st_m {
     font-size: 14px;
     margin: 10px 0 25px;
   }
-  .main .secText_m h5 {
+  .main .secText_m .h5_st_m {
     font-size: 15px;
   }
-  .main .secText_m button {
+  .main .secText_m .btn_st_m {
     width: 400px;
     height: 35px;
     font-size: 13px;
