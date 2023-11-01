@@ -32,10 +32,17 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  overflow-x: hidden;
   background-color: rgba(7, 7, 7, 0.9215686275);
   /*SOBRESANZ*/
 }
@@ -87,7 +94,7 @@ a {
   bottom: 0;
   left: 94px;
   animation-name: deslizY;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
 }
 .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal {
   background-image: url(../assets/images/img0014.png);
@@ -97,6 +104,9 @@ a {
 }
 .header .principalArea_ss {
   padding-right: 0;
+  padding-top: 0.4em;
+  padding-right: 0;
+  padding-left: 3.8em;
 }
 .header .principalArea_ss .logoMobile {
   top: 12px;
@@ -134,10 +144,13 @@ a {
   bottom: 110px;
   right: 0px;
   animation-name: deslizX;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
 }
 .header .principalArea_ss .divNav {
   padding-right: 7em;
+}
+.header .principalArea_ss .divNav_ss {
+  padding-right: 4em;
 }
 .header .principalArea_m .logoMobile {
   top: 12px;
@@ -160,7 +173,7 @@ a {
   bottom: 200px;
   left: -50px;
   animation-name: desliz-X;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
 }
 .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
   background-image: url(../assets/images/imgPrincipal.png);
@@ -188,7 +201,7 @@ a {
   bottom: 200px;
   left: -50px;
   animation-name: desliz-X;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
 }
 .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
   background-image: url(../assets/images/img0025.png);
@@ -221,7 +234,7 @@ a {
   bottom: 0;
   left: 94px;
   animation-name: deslizY;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
 }
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
   height: 700px;
@@ -453,6 +466,7 @@ a {
 }
 .main {
   background-color: #000;
+  overflow-x: hidden;
   /*NO PUDE INCLUIR '@EXTEND' EN LOS H3, P, H5, BUTTON*/
   /*GALERIA*/
   /*CONTACTO*/

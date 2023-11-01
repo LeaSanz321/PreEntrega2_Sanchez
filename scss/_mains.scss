@@ -1,5 +1,6 @@
 .main {
     background-color: map-get($mapa-colores, color-negro);
+    overflow-x: hidden;
     .secEscritorio{
         padding: 40px;
         h3 {

@@ -1,6 +1,7 @@
 .header{
     @include contenedorFlexible(row);
     height: 100vh;
+    overflow-x: hidden;
     background-color: #070707eb;
     .lateralNegro{
         @include contenedorFlexible(column);
@@ -49,7 +50,7 @@
                 bottom: 0;
                 left: 94px;
                 animation-name: deslizY;
-                animation-duration: 2s;
+                animation-duration: 1.3s;
             }
             .imgPrincipal{
                 background-image: url(../assets/images/img0014.png);
@@ -63,6 +64,10 @@
     .principalArea_ss{
         @extend .principalArea;
         padding-right: 0;
+        padding-top: .4em;
+        padding-right: 0;
+        padding-left: 3.8em;
+
         .logoMobile{
             top: 12px;
             left: 2em;
@@ -100,12 +105,15 @@
                 bottom: 110px;
                 right: 0px;
                 animation-name: deslizX;
-                animation-duration: 2s;
+                animation-duration: 1.3s;
 
             }
         }
         .divNav{
             padding-right: 7em;
+        }
+        .divNav_ss{
+            padding-right: 4em;
         }
     }
     .principalArea_m{
@@ -132,7 +140,7 @@
                 bottom: 200px;
                 left: -50px;
                 animation-name: desliz-X;
-                animation-duration: 2s;
+                animation-duration: 1.3s;
             }
             .imgPrincipal_m{
                 background-image:url(../assets/images/imgPrincipal.png);
@@ -163,7 +171,7 @@
                 bottom: 200px;
                 left: -50px;
                 animation-name: desliz-X;
-                animation-duration: 2s;
+                animation-duration: 1.3s;
             }
             .imgPrincipal_g{
                 background-image:url(../assets/images/img0025.png);
@@ -201,7 +209,7 @@
                 bottom: 0;
                 left: 94px;
                 animation-name: deslizY;
-                animation-duration: 2s;
+                animation-duration: 1.3s;
 
             }
             .imgPrincipal_c{
