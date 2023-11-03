@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="./assets/images/iconoSZ.ico">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a28d060fb2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -56,7 +57,7 @@
                 <h1 class="m-0">Empilchate<br>en <span>SANZ</span></h1>
                 <p class="text-white fw-light">y destacá de los demás.</p>
               </div>
-              <div class="imgPrincipal col-lg-6"></div>
+              <div class="imgPrincipal col-lg-6" data-aos="zoom-out-up"></div>
             </section>
         </div>
     </header>
@@ -65,9 +66,9 @@
             <h3 class="fw-normal">Prendas únicas...</h3>
             <p class="fw-normal">Nos enfocamos en traer las mejores pilchas al estilo Vintage y Oversize</p>
             <div class="containerImg d-flex flex-sm-column flex-md-row justify-content-center gap-4">
-                <div class="subContainer"><img src="./assets/images/img00.jpg" alt="Imagen Campera Chicago Bulls" class="w-100 h-100"></div>
-                <div class="subContainer"><img src="./assets/images/img02.jpg" alt="Imagen Campera Nike Vintage" class="w-100 h-100"></div>
-                <div class="subContainer"><img src="./assets/images/img01.jpg" alt="Imagen Campera Nautica blanca" class="w-100 h-100"></div>
+                <div class="subContainer" data-aos="fade-right"><img src="./assets/images/img00.jpg" alt="Imagen Campera Chicago Bulls" class="w-100 h-100"></div>
+                <div class="subContainer" data-aos="flip-up"><img src="./assets/images/img02.jpg" alt="Imagen Campera Nike Vintage" class="w-100 h-100"></div>
+                <div class="subContainer" data-aos="fade-left"><img src="./assets/images/img01.jpg" alt="Imagen Campera Nautica blanca" class="w-100 h-100"></div>
             </div>
         </section>
         <section class="secCelular text-center p-5 text-white d-flex flex-column justify-content-end">
@@ -115,7 +116,7 @@
             <h3 class="h3_secText fw-semibold">¿Te copa lo que ves?</h3>
             <p class="p_secText fw-light">Sanz es un emprendimiento a futuro. Muy pronto lanzaremos fecha de lanzamiento y más información. Por eso no queremos que te pierdas ninguna noticia.</p>
             <h5 class="h5_secText fw-normal">¿Quieres estar al tanto?</h5>
-            <button class="btn_secText" type="submit"><a href="/pages/contacto.html" class="text-white">Si, quiero!</a></button>
+            <button class="btn_secText" type="submit" data-aos="zoom-in"><a href="/pages/contacto.html" class="text-white">Si, quiero!</a></button>
         </section>
     </main>
     <footer class="footerIndex bg-black d-flex flex-column">
@@ -203,5 +204,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
