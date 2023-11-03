@@ -25,6 +25,39 @@
     transform: translateX(0);
   }
 }
+@keyframes bug404 {
+  0% {
+    transform: translateX(-300px);
+    transform: translateY(250px);
+    rotate: -90deg;
+  }
+  50% {
+    transform: translateX(0px);
+    transform: translateY(250px);
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 0deg;
+    transform: translateY(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes span1 {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: 90px;
+  }
+}
+@keyframes span2 {
+  0% {
+    right: -70px;
+  }
+  100% {
+    right: 90px;
+  }
+}
 body {
   font-family: "Lexend Exa", sans-serif;
 }
@@ -268,20 +301,34 @@ a {
   letter-spacing: -1px;
 }
 .header .page404 {
-  border: 1px solid blue;
   width: 100%;
   color: rgba(190, 190, 190, 0.871);
   font-family: "Pixelify Sans", sans-serif;
 }
-.header .page404 h1 {
-  font-size: 12em;
-  letter-spacing: 5px;
+.header .page404 .container404 {
+  padding: 0;
+  height: 40%;
 }
-.header .page404 h1 i {
-  font-size: 0.9em;
+.header .page404 .container404 i {
+  animation-name: bug404;
+  animation-duration: 5s;
+  font-size: 10em;
+}
+.header .page404 .container404 h1 {
+  font-size: 15em;
+}
+.header .page404 .container404 h1 .span1 {
+  left: 90px;
+  animation-name: span1;
+  animation-duration: 5s;
+}
+.header .page404 .container404 h1 .span2 {
+  right: 90px;
+  animation-name: span2;
+  animation-duration: 5s;
 }
 .header .page404 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 /*Media Queries*/

@@ -22,3 +22,39 @@
         transform: translateX(0);
     }
 }
+@keyframes bug404 {
+    0%{
+
+        transform: translateX(-300px);
+        transform: translateY(250px);
+        rotate: -90deg;
+    }
+   
+    50%{
+        transform: translateX(0px);
+        transform: translateY(250px);
+        rotate: 0deg;
+    }
+  
+    100%{
+        rotate: 0deg;
+        transform: translateY(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes span1 {
+    0%{
+        left: -70px;
+    }
+    100%{
+        left: 90px;
+    }
+}
+@keyframes span2 {
+    0%{
+        right:-70px;
+    }
+    100%{
+        right: 90px;
+    }
+}

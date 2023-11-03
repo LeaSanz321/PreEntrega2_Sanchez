@@ -248,19 +248,37 @@
         }
     }
     .page404{
-        border: 1px solid blue;
         width: 100%;
         color: rgba(190, 190, 190, 0.871);
         font-family: 'Pixelify Sans', sans-serif;
-        h1{
-            font-size: 12em;
-            letter-spacing: 5px;
+        .container404{
+            padding: 0;
+            height: 40%;
             i{
-                font-size: .9em;
+                
+                animation-name: bug404;
+                animation-duration: 5s;
+                font-size: 10em;
+                
+                
+            }
+            h1{
+                font-size: 15em;
+                .span1{
+                    left: 90px;
+                    animation-name: span1;   
+                    animation-duration: 5s;
+                }
+                .span2{
+                    right: 90px;
+                    animation-name: span2;
+                    animation-duration: 5s;
+                }
+                
             }
         }
         h2{
-            font-size: 1.2em;
+            font-size: 2em;
         }
     }
 }
