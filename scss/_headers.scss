@@ -247,6 +247,22 @@
             }
         }
     }
+    .page404{
+        border: 1px solid blue;
+        width: 100%;
+        color: rgba(190, 190, 190, 0.871);
+        font-family: 'Pixelify Sans', sans-serif;
+        h1{
+            font-size: 12em;
+            letter-spacing: 5px;
+            i{
+                font-size: .9em;
+            }
+        }
+        h2{
+            font-size: 1.2em;
+        }
+    }
 }
 
 /*Media Queries*/
