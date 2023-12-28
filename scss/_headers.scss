@@ -9,15 +9,21 @@
         height: 100%;
         width: 4.4em;
         padding: 1em 0;
-        .logo{
-            color: map-get($mapa-colores, color-logo);
-            font-weight:$fw-bolder;
-            font-size: 25px;
+        ul{
+            text-align: center;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;
+                padding: 0;
+            }
+            i{
+                font-size: 23px;
+                margin: 15px auto;
+            }   
+            
         }
-        i{
-            font-size: 23px;
-            margin: 15px auto;
-        }
+        
     }
     .principalArea {
         background-color: map-get($mapa-colores, color-areaPrincipal);
@@ -129,6 +135,10 @@
             }
         }
         .seccionPrincipal_m{
+            #likesTitle{
+                font-size: 70px;
+
+            }
             h1{
                 font-size: $fs-titulosDesktop;
                 letter-spacing: -5px;
@@ -247,6 +257,45 @@
             }
         }
     }
+
+    .principalArea_mg{
+        @extend .principalArea;
+        .logoMobile{
+            top: 12px;
+            left: 2em;
+            display: none;
+            .logo{
+                color: map-get($mapa-colores, color-logo);
+                font-weight:$fw-bolder;
+                font-size: 25px;
+            }
+        }
+        .seccionPrincipal_mg{
+            h1{
+                font-size: 3.5em;
+                letter-spacing: -5px;
+            }
+            .yellowBar_mg{
+                background-color: map-get($mapa-colores, color-barraPrincipal);
+                width: 55%;
+                height: 50px;
+                bottom: 200px;
+                left: -50px;
+                animation-name: desliz-X;
+                animation-duration: 1.3s;
+            }
+            .imgPrincipal_mg{
+                background-image:url(../assets/images/mgFondo.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position-y: -120px;
+                height: 650px;
+            }
+        }
+    }
+
+
+
     .page404{
         width: 100%;
         color: rgba(190, 190, 190, 0.871);

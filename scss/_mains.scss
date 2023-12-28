@@ -255,6 +255,25 @@
     .contenedorImgGal{
         height: 520px;
         width: 420px;
+        position: relative;
+        .like{
+            display: none;
+            position: absolute;
+            color: #aeaaaad7;
+            right: 25px;
+            top: 13px;
+            font-size: 25px;
+        }
+    }
+    .contenedorImgGal:hover{
+        
+        .like{
+            display: block;
+        }
+        .like:hover{
+            color: #cb1f1fdf;
+            
+        }
     }
     /*CONTACTO*/
     .secMap{

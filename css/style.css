@@ -88,40 +88,44 @@ a {
   width: 4.4em;
   padding: 1em 0;
 }
-.header .lateralNegro .logo {
+.header .lateralNegro ul {
+  text-align: center;
+}
+.header .lateralNegro ul .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
+  padding: 0;
 }
-.header .lateralNegro i {
+.header .lateralNegro ul i {
   font-size: 23px;
   margin: 15px auto;
 }
-.header .principalArea, .header .principalArea_c, .header .principalArea_g, .header .principalArea_m, .header .principalArea_ss {
+.header .principalArea, .header .principalArea_mg, .header .principalArea_c, .header .principalArea_g, .header .principalArea_m, .header .principalArea_ss {
   background-color: rgba(15, 15, 15, 0.9215686275);
   padding-top: 0.4em;
   padding-right: 4em;
   padding-left: 3.8em;
 }
-.header .principalArea .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_ss .logoMobile {
+.header .principalArea .logoMobile, .header .principalArea_mg .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_ss .logoMobile {
   /* top: 12px;
    left: 2em;*/
   display: none;
 }
-.header .principalArea .logoMobile .logo, .header .principalArea_c .logoMobile .logo, .header .principalArea_g .logoMobile .logo, .header .principalArea_m .logoMobile .logo, .header .principalArea_ss .logoMobile .logo {
+.header .principalArea .logoMobile .logo, .header .principalArea_mg .logoMobile .logo, .header .principalArea_c .logoMobile .logo, .header .principalArea_g .logoMobile .logo, .header .principalArea_m .logoMobile .logo, .header .principalArea_ss .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
-.header .principalArea .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1 {
+.header .principalArea .seccionPrincipal h1, .header .principalArea_mg .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
-.header .principalArea .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p {
+.header .principalArea .seccionPrincipal p, .header .principalArea_mg .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p {
   font-size: 1em;
   letter-spacing: -1px;
 }
-.header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar {
+.header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_mg .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 115px;
   height: 90%;
@@ -130,7 +134,7 @@ a {
   animation-name: deslizY;
   animation-duration: 1.3s;
 }
-.header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal {
+.header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_mg .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal {
   background-image: url(../assets/images/img0014.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,6 +199,9 @@ a {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
+}
+.header .principalArea_m .seccionPrincipal_m #likesTitle {
+  font-size: 70px;
 }
 .header .principalArea_m .seccionPrincipal_m h1 {
   font-size: 5.5em;
@@ -300,6 +307,36 @@ a {
   font-size: 15px;
   letter-spacing: -1px;
 }
+.header .principalArea_mg .logoMobile {
+  top: 12px;
+  left: 2em;
+  display: none;
+}
+.header .principalArea_mg .logoMobile .logo {
+  color: rgba(255, 255, 255, 0.8823529412);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.header .principalArea_mg .seccionPrincipal_mg h1 {
+  font-size: 3.5em;
+  letter-spacing: -5px;
+}
+.header .principalArea_mg .seccionPrincipal_mg .yellowBar_mg {
+  background-color: rgba(224, 203, 11, 0.7607843137);
+  width: 55%;
+  height: 50px;
+  bottom: 200px;
+  left: -50px;
+  animation-name: desliz-X;
+  animation-duration: 1.3s;
+}
+.header .principalArea_mg .seccionPrincipal_mg .imgPrincipal_mg {
+  background-image: url(../assets/images/mgFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -120px;
+  height: 650px;
+}
 .header .page404 {
   width: 100%;
   color: rgba(190, 190, 190, 0.871);
@@ -338,24 +375,24 @@ a {
   .header .lateralNegro {
     display: none !important;
   }
-  .header .principalArea, .header .principalArea_ss, .header .principalArea_m, .header .principalArea_g, .header .principalArea_c {
+  .header .principalArea, .header .principalArea_ss, .header .principalArea_m, .header .principalArea_g, .header .principalArea_c, .header .principalArea_mg {
     padding-left: 2em;
   }
-  .header .principalArea .logoMobile, .header .principalArea_ss .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_c .logoMobile {
+  .header .principalArea .logoMobile, .header .principalArea_ss .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_mg .logoMobile {
     display: block;
   }
-  .header .principalArea .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1 {
+  .header .principalArea .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1, .header .principalArea_mg .seccionPrincipal h1 {
     font-size: 6em;
     letter-spacing: -5px;
   }
-  .header .principalArea .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p {
+  .header .principalArea .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p, .header .principalArea_mg .seccionPrincipal p {
     font-size: 1.5em;
     letter-spacing: -1px;
   }
-  .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar {
+  .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar, .header .principalArea_mg .seccionPrincipal .yellowBar {
     left: 15%;
   }
-  .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal {
+  .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_mg .seccionPrincipal .imgPrincipal {
     display: none;
   }
   .header .principalArea_m {
@@ -419,31 +456,31 @@ a {
   .header .lateralNegro {
     display: none !important;
   }
-  .header .principalArea, .header .principalArea_ss, .header .principalArea_m, .header .principalArea_g, .header .principalArea_c {
+  .header .principalArea, .header .principalArea_ss, .header .principalArea_m, .header .principalArea_g, .header .principalArea_c, .header .principalArea_mg {
     padding-right: 2em;
     padding-left: 2em;
   }
-  .header .principalArea .logoMobile, .header .principalArea_ss .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_c .logoMobile {
+  .header .principalArea .logoMobile, .header .principalArea_ss .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_mg .logoMobile {
     display: block !important;
   }
-  .header .principalArea .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1 {
+  .header .principalArea .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1, .header .principalArea_mg .seccionPrincipal h1 {
     font-size: 4.2em;
     letter-spacing: -5px;
     margin-left: 5em;
     line-height: 75px;
   }
-  .header .principalArea .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p {
+  .header .principalArea .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p, .header .principalArea_mg .seccionPrincipal p {
     font-size: 0.9em;
     letter-spacing: -1px;
     margin-left: 10px;
   }
-  .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar {
+  .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar, .header .principalArea_mg .seccionPrincipal .yellowBar {
     left: 65%;
     bottom: 0;
     width: 95px;
     height: 95%;
   }
-  .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal {
+  .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_mg .seccionPrincipal .imgPrincipal {
     display: none !important;
   }
   .header .principalArea_ss .logoMobile {
@@ -772,6 +809,21 @@ a {
 .main .contenedorImgGal {
   height: 520px;
   width: 420px;
+  position: relative;
+}
+.main .contenedorImgGal .like {
+  display: none;
+  position: absolute;
+  color: rgba(174, 170, 170, 0.8431372549);
+  right: 25px;
+  top: 13px;
+  font-size: 25px;
+}
+.main .contenedorImgGal:hover .like {
+  display: block;
+}
+.main .contenedorImgGal:hover .like:hover {
+  color: rgba(203, 31, 31, 0.8745098039);
 }
 .main .secMap iframe {
   border: none;
