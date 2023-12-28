@@ -1,6 +1,7 @@
 let productosMg = [];
 
-const contenedorMisMg = document.querySelector("#contenedorMisMg");
+const contenedorMisMg = document.querySelector("#ul_likes");
+
 
 const listaProductos = document.querySelector("#contenedorPadre");
 
@@ -9,16 +10,20 @@ const listaProductos = document.querySelector("#contenedorPadre");
 function agregarMg(evt){
     if(evt.target.classList.contains('like')){
         const producto = evt.target.parentElement;
+        
 
         mostrarProducto(producto);
     }
 }
 
 function mostrarProducto(item){
-    const fotoProducto = item;
-        console.log(fotoProducto);
+    const infoProducto = {
+        imagen: item.querySelector("img").src,
+        icono: item.querySelector("i").className
+    }
+    console.log(infoProducto)
 
-    productosMg = [...productosMg, fotoProducto];
+    productosMg = [...productosMg, infoProducto];
         console.log(productosMg)
 
     agregarProducto();
@@ -26,9 +31,16 @@ function mostrarProducto(item){
 
 function agregarProducto(){
     productosMg.forEach(producto => {
-        contenedorMisMg.innerHTML = `
+        const newLike = document.createElement('li');
+        newLike.innerHTML = `
+            <div class="contenedorImgGal col-sm-6 col-md-4" data-aos="flip-left">
+                <img src="${producto.imagen}" alt="Imagen Campera moda Vintage, Oversize" class="w-100 h-100 object-fit-cover">
+                <i class="like fa-solid fa-heart"></i>
+            </div>
         `;
+        contenedorMisMg.appendChild(newLike);
     })
 }
+
 
 listaProductos.addEventListener('click', agregarMg);
