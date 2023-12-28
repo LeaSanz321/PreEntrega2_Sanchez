@@ -16,12 +16,19 @@ function agregarMg(evt){
 
 function mostrarProducto(item){
     const fotoProducto = item;
-    console.log(fotoProducto);
+        console.log(fotoProducto);
 
-    productosMg.push(fotoProducto);
-    console.log(productosMg)
+    productosMg = [...productosMg, fotoProducto];
+        console.log(productosMg)
+
+    agregarProducto();
 }
 
-
+function agregarProducto(){
+    productosMg.forEach(producto => {
+        contenedorMisMg.innerHTML = `
+        `;
+    })
+}
 
 listaProductos.addEventListener('click', agregarMg);
