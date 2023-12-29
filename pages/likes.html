@@ -65,7 +65,7 @@
     <main class="main">
         <!--/*class="d-flex flex-wrap justify-content-center align-items-center gap-3 p-5"-->
         <section class="row p-4 justify-content-center gap-3" id="contenedorMisMg">
-            <ul class="ul_likes d-inline" id="ul_likes">
+            <ul class="ul_likes d-flex flex-wrap" id="ul_likes">
             
             </ul>
         </section>
@@ -165,6 +165,20 @@
     <script>
       AOS.init();
     </script>
-    <script src="../js/main.js"></script>
+    <script>
+        const listaProd = window.localStorage.getItem("lista-productos"),
+              panelLikes = document.querySelector(".ul_likes")  
+              
+              
+        if(listaProd != null){
+            listaProd.split("=").forEach(element => {
+                if(window.localStorage.getItem(element) != null){
+                    let nodeLi = document.createElement("li")
+                    nodeLi.innerHTML = window.localStorage.getItem(element)
+                    panelLikes.appendChild(nodeLi)
+                    }
+                })
+       }
+    </script>
 </body>
 </html>

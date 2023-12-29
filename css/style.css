@@ -825,6 +825,13 @@ a {
 .main .contenedorImgGal:hover .like:hover {
   color: rgba(203, 31, 31, 0.8745098039);
 }
+.main .ul_likes {
+  justify-content: center;
+  gap: 15px 30px;
+}
+.main .ul_likes li {
+  list-style: none;
+}
 .main .secMap iframe {
   border: none;
   margin-top: 25px;
