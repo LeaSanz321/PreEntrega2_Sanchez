@@ -1,0 +1,22 @@
+[
+    {
+        "nombre":"fila",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-fila.png"
+    },
+    {
+        "nombre":"starter",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-starter.png"
+    },
+    {
+        "nombre":"lacoste",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-lacoste.png"
+    },
+    {
+        "nombre":"vans",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-vans.png"
+    }
+]

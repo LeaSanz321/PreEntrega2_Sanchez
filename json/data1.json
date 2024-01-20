@@ -1,0 +1,22 @@
+[
+    {
+        "nombre":"nike",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-nike.png"
+    },
+    {
+        "nombre":"theNortFace",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-tnf.png"
+    },
+    {
+        "nombre":"nautica",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-nautica.png"
+    },
+    {
+        "nombre":"adidas",
+        "clas":"divLogo",
+        "src":"../assets/images/logo-adidas.png"
+    }
+]
