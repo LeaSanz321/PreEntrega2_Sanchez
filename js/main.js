@@ -34,7 +34,22 @@ function agregarMg(evt){
         }else{
             console.log(window.localStorage.getItem(urlImgProducto[urlImgProducto.length -1]))
         }
+
+        Toastify({
+            text:'↪ Se ha agregado a favoritos',
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            gravity: "bottom",
+            position: "right",
+            style: {
+                background: "#0f0f0f80",
+                color: "#ffffffe1",
+                font:"Arial",
+              }
+    
+        }).showToast();
     }
+    
     
 }
 
