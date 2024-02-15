@@ -17,8 +17,6 @@ function agregarMg(evt){
         let urlImgProducto = producto.firstElementChild.src.split("/"), //fragmentos src de la img
             imgProducto = urlImgProducto[urlImgProducto.length - 1];  //último fragmento src de la img
         
-        
-        
         if (icono.classList.contains('fa-solid')){
             Toastify({
                 text:'↪ Se ha agregado a favoritos',
@@ -33,7 +31,7 @@ function agregarMg(evt){
         
             }).showToast();
         
-            mostrarProducto(producto);
+            
 
             if(localStorage.getItem("lista-productos") != null){ //si lista-productos existe:
                 let auxLista = window.localStorage.getItem("lista-productos"), //auxLista almacena sus valores 
@@ -45,9 +43,11 @@ function agregarMg(evt){
                 localStorage.setItem("lista-productos",imgProducto +"=") //si  no, se crea lista-productos con el valor agregado.
             }
 
-            if(window.localStorage.getItem(urlImgProducto[urlImgProducto.length -1])!=""){ 
+            if(window.localStorage.key(urlImgProducto[urlImgProducto.length -1])){ 
                 window.localStorage.setItem(urlImgProducto[urlImgProducto.length - 1],producto.outerHTML)
             }
+
+            mostrarProducto(producto);
         }
     }
 }
@@ -58,6 +58,7 @@ function mostrarProducto(item){
         imagen: item.querySelector("img").src,
         icono: item.querySelector("i").className
     }
+
     productosMg = [...productosMg, infoProducto];
     agregarProducto();
 }
