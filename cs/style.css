@@ -80,6 +80,7 @@ a {
   background-color: rgba(7, 7, 7, 0.9215686275);
   /*SOBRESANZ*/
 }
+
 .header .lateralNegro {
   display: flex;
   flex-direction: column;
@@ -88,43 +89,52 @@ a {
   width: 4.4em;
   padding: 1em 0;
 }
+
 .header .lateralNegro ul {
   text-align: center;
 }
+
 .header .lateralNegro ul .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
   padding: 0;
 }
+
 .header .lateralNegro ul i {
   font-size: 23px;
   margin: 15px auto;
 }
+
 .header .principalArea, .header .principalArea_mg, .header .principalArea_c, .header .principalArea_g, .header .principalArea_m, .header .principalArea_ss {
   background-color: rgba(15, 15, 15, 0.9215686275);
   padding-top: 0.4em;
   padding-right: 4em;
   padding-left: 3.8em;
 }
+
 .header .principalArea .logoMobile, .header .principalArea_mg .logoMobile, .header .principalArea_c .logoMobile, .header .principalArea_g .logoMobile, .header .principalArea_m .logoMobile, .header .principalArea_ss .logoMobile {
   /* top: 12px;
    left: 2em;*/
   display: none;
 }
+
 .header .principalArea .logoMobile .logo, .header .principalArea_mg .logoMobile .logo, .header .principalArea_c .logoMobile .logo, .header .principalArea_g .logoMobile .logo, .header .principalArea_m .logoMobile .logo, .header .principalArea_ss .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .header .principalArea .seccionPrincipal h1, .header .principalArea_mg .seccionPrincipal h1, .header .principalArea_c .seccionPrincipal h1, .header .principalArea_g .seccionPrincipal h1, .header .principalArea_m .seccionPrincipal h1, .header .principalArea_ss .seccionPrincipal h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
+
 .header .principalArea .seccionPrincipal p, .header .principalArea_mg .seccionPrincipal p, .header .principalArea_c .seccionPrincipal p, .header .principalArea_g .seccionPrincipal p, .header .principalArea_m .seccionPrincipal p, .header .principalArea_ss .seccionPrincipal p {
   font-size: 1em;
   letter-spacing: -1px;
 }
+
 .header .principalArea .seccionPrincipal .yellowBar, .header .principalArea_mg .seccionPrincipal .yellowBar, .header .principalArea_c .seccionPrincipal .yellowBar, .header .principalArea_g .seccionPrincipal .yellowBar, .header .principalArea_m .seccionPrincipal .yellowBar, .header .principalArea_ss .seccionPrincipal .yellowBar {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 115px;
@@ -134,40 +144,48 @@ a {
   animation-name: deslizY;
   animation-duration: 1.3s;
 }
+
 .header .principalArea .seccionPrincipal .imgPrincipal, .header .principalArea_mg .seccionPrincipal .imgPrincipal, .header .principalArea_c .seccionPrincipal .imgPrincipal, .header .principalArea_g .seccionPrincipal .imgPrincipal, .header .principalArea_m .seccionPrincipal .imgPrincipal, .header .principalArea_ss .seccionPrincipal .imgPrincipal {
   background-image: url(../assets/images/img0014.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
+
 .header .principalArea_ss {
   padding-right: 0;
   padding-top: 0.4em;
   padding-right: 0;
   padding-left: 3.8em;
 }
+
 .header .principalArea_ss .logoMobile {
   top: 12px;
   left: 2em;
   display: none;
 }
+
 .header .principalArea_ss .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .header .principalArea_ss .seccionPrincipal_ss h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
+
 .header .principalArea_ss .seccionPrincipal_ss h1 .comaTitulo {
   color: rgba(224, 203, 11, 0.7607843137);
   font-weight: normal;
 }
+
 .header .principalArea_ss .seccionPrincipal_ss h1 .iconTitulo {
   font-size: 0.6em;
   margin-left: 25px;
 }
+
 .header .principalArea_ss .seccionPrincipal_ss .imgPrincipal_ss {
   background-image: url(../assets/images/img0017.png);
   background-repeat: no-repeat;
@@ -175,6 +193,7 @@ a {
   background-position-y: 15%;
   height: 700px;
 }
+
 .header .principalArea_ss .seccionPrincipal_ss .yellowBar_ss {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 55%;
@@ -184,29 +203,36 @@ a {
   animation-name: deslizX;
   animation-duration: 1.3s;
 }
+
 .header .principalArea_ss .divNav {
   padding-right: 7em;
 }
+
 .header .principalArea_ss .divNav_ss {
   padding-right: 4em;
 }
+
 .header .principalArea_m .logoMobile {
   top: 12px;
   left: 2em;
   display: none;
 }
+
 .header .principalArea_m .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .header .principalArea_m .seccionPrincipal_m #likesTitle {
   font-size: 70px;
 }
+
 .header .principalArea_m .seccionPrincipal_m h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
+
 .header .principalArea_m .seccionPrincipal_m .yellowBar_m {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 55%;
@@ -216,25 +242,30 @@ a {
   animation-name: desliz-X;
   animation-duration: 1.3s;
 }
+
 .header .principalArea_m .seccionPrincipal_m .imgPrincipal_m {
   background-image: url(../assets/images/imgPrincipal.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
 }
+
 .header .principalArea_g {
   padding-right: 4em;
 }
+
 .header .principalArea_g .logoMobile {
   top: 12px;
   left: 2em;
   display: none;
 }
+
 .header .principalArea_g .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .header .principalArea_g .seccionPrincipal_g .yellowBar_g {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 55%;
@@ -244,30 +275,36 @@ a {
   animation-name: desliz-X;
   animation-duration: 1.3s;
 }
+
 .header .principalArea_g .seccionPrincipal_g .imgPrincipal_g {
   background-image: url(../assets/images/img0025.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
 }
+
 .header .principalArea_g .seccionPrincipal_g h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
+
 .header .principalArea_c .logoMobile {
   top: 12px;
   left: 2em;
   display: none;
 }
+
 .header .principalArea_c .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .header .principalArea_c .seccionPrincipal_c h1 {
   font-size: 5.5em;
   letter-spacing: -5px;
 }
+
 .header .principalArea_c .seccionPrincipal_c .yellowBar_c {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 115px;
@@ -277,12 +314,15 @@ a {
   animation-name: deslizY;
   animation-duration: 1.3s;
 }
+
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c {
   height: 700px;
 }
+
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact h3 {
   font-size: 1.8em;
 }
+
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact {
   width: 450px;
   height: 30px;
@@ -293,10 +333,12 @@ a {
   background: none;
   margin-top: 30px;
 }
+
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .inpContact::placeholder {
   color: rgba(171, 171, 171, 0.6588235294);
   font-weight: light;
 }
+
 .header .principalArea_c .seccionPrincipal_c .imgPrincipal_c .formContact .btnContact {
   margin-top: 30px;
   width: 450px;
@@ -307,20 +349,24 @@ a {
   font-size: 15px;
   letter-spacing: -1px;
 }
+
 .header .principalArea_mg .logoMobile {
   top: 12px;
   left: 2em;
   display: none;
 }
+
 .header .principalArea_mg .logoMobile .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .header .principalArea_mg .seccionPrincipal_mg h1 {
   font-size: 3.5em;
   letter-spacing: -5px;
 }
+
 .header .principalArea_mg .seccionPrincipal_mg .yellowBar_mg {
   background-color: rgba(224, 203, 11, 0.7607843137);
   width: 55%;
@@ -330,6 +376,7 @@ a {
   animation-name: desliz-X;
   animation-duration: 1.3s;
 }
+
 .header .principalArea_mg .seccionPrincipal_mg .imgPrincipal_mg {
   background-image: url(../assets/images/mgFondo.jpg);
   background-repeat: no-repeat;
@@ -337,33 +384,40 @@ a {
   background-position-y: -120px;
   height: 650px;
 }
+
 .header .page404 {
   width: 100%;
   color: rgba(190, 190, 190, 0.871);
   font-family: "Pixelify Sans", sans-serif;
 }
+
 .header .page404 .container404 {
   padding: 0;
   height: 40%;
 }
+
 .header .page404 .container404 i {
   animation-name: bug404;
   animation-duration: 5s;
   font-size: 10em;
 }
+
 .header .page404 .container404 h1 {
   font-size: 15em;
 }
+
 .header .page404 .container404 h1 .span1 {
   left: 90px;
   animation-name: span1;
   animation-duration: 5s;
 }
+
 .header .page404 .container404 h1 .span2 {
   right: 90px;
   animation-name: span2;
   animation-duration: 5s;
 }
+
 .header .page404 h2 {
   font-size: 2em;
 }
@@ -572,24 +626,30 @@ a {
   /*GALERIA*/
   /*CONTACTO*/
 }
+
 .main .secEscritorio {
   padding: 40px;
 }
+
 .main .secEscritorio h3 {
   font-size: 3.5em;
   letter-spacing: -8px;
 }
+
 .main .secEscritorio p {
   font-size: 15px;
   margin: 10px;
 }
+
 .main .secEscritorio .containerImg {
   margin: 20px auto;
 }
+
 .main .secEscritorio .containerImg .subContainer {
   height: 430px;
   width: 430px;
 }
+
 .main .secCelular {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/img02.jpg);
   background-repeat: no-repeat;
@@ -597,53 +657,67 @@ a {
   height: 100vh;
   display: none !important;
 }
+
 .main .secCelular h3 {
   font-size: 3.5em;
   letter-spacing: -8px;
 }
+
 .main .secCelular p {
   font-size: 18px;
 }
+
 .main .carruselMobile {
   display: none !important;
 }
+
 .main .carruselMobile .carousel-item {
   height: 80vh;
 }
+
 .main .secVideo {
   padding: 15px;
 }
+
 .main .secVideo .box {
   height: 450px;
 }
+
 .main .secVideo .box .divVideo {
   background-color: #1a1a1a;
   width: 90%;
   height: 90%;
   border-radius: 10px;
 }
+
 .main .secVideo .box .divVideo video {
   width: 45%;
 }
+
 .main .secVideo .divTwo {
   padding: 15px;
 }
+
 .main .secVideo .divTwo h3 {
   font-size: 3.5em;
   letter-spacing: -8px;
 }
+
 .main .secVideo .divTwo p {
   font-size: 18px;
 }
+
 .main .secVideo_m {
   padding: 0 45px;
   margin-top: 30px;
   margin-bottom: 50px;
   height: 350px;
 }
+
 .main .secVideo_m .divOne_m {
   width: 100%;
 }
+
 .main .secVideo_m .divOne_m .divVideo {
   background-color: #1a1a1a;
   width: 90%;
@@ -651,6 +725,7 @@ a {
   border-radius: 10px;
   padding: 0 20px;
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo {
   background-repeat: no-repeat;
   background-size: contain;
@@ -658,18 +733,23 @@ a {
   width: 25%;
   height: 75%;
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:first-child {
   background-image: url(../assets/images/logo-nike.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:nth-child(2) {
   background-image: url(../assets/images/logo-tnf.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:nth-child(3) {
   background-image: url(../assets/images/logo-nautica.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaUno .divLogo:last-child {
   background-image: url(../assets/images/logo-adidas.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo {
   background-repeat: no-repeat;
   background-size: contain;
@@ -677,63 +757,80 @@ a {
   width: 25%;
   height: 75%;
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:first-child {
   background-image: url(../assets/images/logo-fila.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:nth-child(2) {
   background-image: url(../assets/images/logo-starter.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:nth-child(3) {
   background-image: url(../assets/images/logo-lacoste.png);
 }
+
 .main .secVideo_m .divOne_m .divVideo .cajaDos .divLogo:last-child {
   background-image: url(../assets/images/logo-vans.png);
 }
+
 .main .secVideo_m .divTwo_m {
   padding: 15px;
 }
+
 .main .secVideo_m .divTwo_m h3 {
   font-size: 30px;
 }
+
 .main .secVideo_m .divTwo_m p {
   font-size: 16px;
 }
+
 .main .secVideo_ss {
   padding: 0 40px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .main .secVideo_ss .divVideo_ss {
   background-color: #1a1a1a;
   width: 90%;
   height: 95%;
   border-radius: 10px;
 }
+
 .main .secVideo_ss .divTwo_ss {
   padding: 15px;
 }
+
 .main .secVideo_ss .divTwo_ss .sanz_ss {
   color: rgba(224, 203, 11, 0.9019607843);
 }
+
 .main .secVideo_ss .divTwo_ss a {
   background-color: rgba(224, 203, 11, 0.5882352941);
   padding: 0 5px;
 }
+
 .main .secText {
   padding: 55px 50px;
   height: 350px;
 }
+
 .main .secText .h3_sectext {
   font-size: 2.5em;
   letter-spacing: -5px;
 }
+
 .main .secText .p_secText {
   font-size: 16px;
   margin: 8px auto 25px;
 }
+
 .main .secText .h5_secText {
   font-size: 20px;
 }
+
 .main .secText .btn_secText {
   width: 550px;
   height: 40px;
@@ -743,9 +840,11 @@ a {
   margin-top: 18px;
   font-size: 15px;
 }
+
 .main .secText .btn_secText:hover {
   background-color: rgba(224, 203, 11, 0.768627451);
 }
+
 .main .secText_ss {
   padding: 55px 50px;
   height: 550px;
@@ -753,17 +852,21 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .main .secText_ss .h3_st_ss {
   font-size: 2.5em;
   letter-spacing: -5px;
 }
+
 .main .secText_ss .p_st_ss {
   font-size: 16px;
   margin: 8px auto 25px;
 }
+
 .main .secText_ss .h5_st_ss {
   font-size: 20px;
 }
+
 .main .secText_ss .btn_st_ss {
   width: 550px;
   height: 40px;
@@ -773,9 +876,11 @@ a {
   margin-top: 18px;
   font-size: 15px;
 }
+
 .main .secText_ss .btn_st_ss:hover {
   background-color: rgba(224, 203, 11, 0.768627451);
 }
+
 .main .secText_m {
   padding: 55px 50px;
   height: 550px;
@@ -783,17 +888,21 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .main .secText_m h3 {
   font-size: 2.5em;
   letter-spacing: -5px;
 }
+
 .main .secText_m .p_st_m {
   font-size: 16px;
   margin: 8px auto 25px;
 }
+
 .main .secText_m .h5_st_m {
   font-size: 20px;
 }
+
 .main .secText_m .btn_st_m {
   width: 550px;
   height: 40px;
@@ -803,74 +912,43 @@ a {
   margin-top: 18px;
   font-size: 15px;
 }
+
 .main .secText_m .btn_st_m:hover {
   background-color: rgba(224, 203, 11, 0.768627451);
 }
+
 .main .contenedorImgGal {
   height: 520px;
   width: 420px;
   position: relative;
 }
-.main .contenedorImgGal .btn_like {
+
+.main .contenedorImgGal .like {
   display: none;
-  /* position: absolute;
-  top: 15px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  border: none;
-  background: transparent;
-  #add_like{
-      font-size: 20px;
-      color: red;
-      display: none;
-  }
-  #regular_like{
-      font-size: 20px;
-  }
-  #regular_like.active{
-      background-color: red;
-      display: none;
-  }
-  #add_like.active{
-      display: block;
-      color: red;
-  } */
-}
-.main .contenedorImgGal:hover .btn_like {
-  display: block;
   position: absolute;
-  top: 15px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  border: none;
-  background: transparent;
+  color: rgba(174, 170, 170, 0.8431372549);
+  right: 25px;
+  top: 13px;
+  font-size: 25px;
 }
-.main .contenedorImgGal:hover .btn_like #add_like {
-  font-size: 20px;
-  color: red;
-  display: none;
-}
-.main .contenedorImgGal:hover .btn_like #regular_like {
-  font-size: 20px;
-  color: rgba(33, 33, 33, 0.7725490196);
-}
-.main .contenedorImgGal:hover .btn_like #regular_like.active {
-  background-color: red;
-  display: none;
-}
-.main .contenedorImgGal:hover .btn_like #add_like.active {
+
+.main .contenedorImgGal:hover .like {
   display: block;
-  color: red;
 }
+
+.main .contenedorImgGal:hover .like:hover {
+  color: rgba(203, 31, 31, 0.8745098039);
+}
+
 .main .ul_likes {
   justify-content: center;
   gap: 15px 30px;
 }
+
 .main .ul_likes li {
   list-style: none;
 }
+
 .main .secMap iframe {
   border: none;
   margin-top: 25px;
@@ -882,7 +960,6 @@ a {
 /*MD*/
 @media screen and (width >= 768px) and (width < 992px) {
   .main {
-    overflow-x: hidden;
     /*SECCION CARRUSEL*/
   }
   .main .secEscritorio {
@@ -1064,25 +1141,30 @@ a {
   color: rgba(255, 255, 255, 0.9137254902);
   height: 530px;
 }
+
 .footerIndex .footerEscritorio .linksFooter ul {
   top: 30%;
   line-height: 30px;
   list-style-type: none;
 }
+
 .footerIndex .footerEscritorio .linksFooter ul a {
   font-size: 14px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9137254902);
 }
+
 .footerIndex .footerEscritorio .linksFooter ul .logo {
   color: rgba(255, 255, 255, 0.8823529412);
   font-weight: bolder;
   font-size: 25px;
 }
+
 .footerIndex .footerEscritorio .linksFooter ul #subLogo {
   font-weight: 400;
   font-size: 10px;
 }
+
 .footerIndex .footerEscritorio .hrFooter {
   background-color: rgb(139, 139, 139);
   width: 95%;
@@ -1090,41 +1172,50 @@ a {
   color: #000;
   height: 1px;
 }
+
 .footerIndex .footerEscritorio .redSocial {
   border: 2px solid #fff;
   border-radius: 50%;
   padding: 15px;
   margin: 0 6px;
 }
+
 .footerIndex .footerEscritorio .redSocial a {
   color: #fff;
   text-decoration: none;
   font-size: 25px;
 }
+
 .footerIndex .footerEscritorio .cajaP {
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.768627451);
 }
+
 .footerIndex .footerMobile {
   display: none !important;
 }
+
 .footerIndex .footerMobile .imgFooter {
   background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(../assets/images/gato2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
 }
+
 .footerIndex .footerMobile .imgFooter .botonRegistrarse {
   border: 2px solid #fff;
   padding: 8px 30px;
 }
+
 .footerIndex .footerMobile .footerRedes {
   height: 28vh;
 }
+
 .footerIndex .footerMobile .footerRedes .red {
   border: 2px solid #fff;
   border-radius: 50%;
 }
+
 .footerIndex .footerMobile .footerRedes .red i {
   font-size: 25px;
 }
@@ -1143,5 +1234,6 @@ a {
     display: block !important;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */

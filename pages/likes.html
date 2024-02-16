@@ -169,23 +169,20 @@
     <script>
         const listaProd = JSON.parse(localStorage.getItem("favorites")),
               panelLikes = document.querySelector(".ul_likes")  
-              
-              console.log(listaProd);
+
         if(listaProd != null){
             listaProd.forEach(element => {
                 let nodeLi = document.createElement('li');
                 nodeLi.innerHTML = `
                 <div class="contenedorImgGal col-sm-6 col-md-4" data-aos="flip-left" data-producto-id="${element.id}">
                   <img src="../assets/images/${element.src}" class="w-100 h-100 object-fit-cover">
+                  <button class="btn_like">
+                  <i class="fa-regular fa-heart" id="regular_like"></i>
+                  <i class="fa-solid fa-heart" id="add_like"></i>
+                </button>
                 </div>
                 `
                 panelLikes.appendChild(nodeLi);
-                
-                /* if(window.localStorage.getItem(element) != null){
-                    let nodeLi = document.createElement("li")
-                    nodeLi.innerHTML = window.localStorage.getItem(element)
-                    panelLikes.appendChild(nodeLi)
-                    } */
             })
         }
     </script>
