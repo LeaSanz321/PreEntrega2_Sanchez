@@ -256,25 +256,28 @@
         height: 520px;
         width: 420px;
         position: relative;
-        .like{
-            display: none;
+        .btn_like{
             position: absolute;
-            color: #aeaaaad7;
-            right: 25px;
-            top: 13px;
-            font-size: 25px;
+            top: 15px;
+            right: 30px;
+            border: 1px solid blue;
+
+            background: transparent;
+            #add_like{
+                color: red;
+                display: none;
+            }
+            /* #regular_like:active{
+                background-color: red;
+                display: none;
+            }
+            #add_like:active{
+                display: block;
+                color: red;
+            } */
         }
     }
-    .contenedorImgGal:hover{
-        
-        .like{
-            display: block;
-        }
-        .like:hover{
-            color: #cb1f1fdf;
-            
-        }
-    }
+   
     .ul_likes{
         justify-content: center;
         gap: 15px 30px;
@@ -299,6 +302,7 @@
 @media screen and (width >= 768px) and (width < 992px)  {
 
     .main{
+        overflow-x: hidden;
         .secEscritorio{
             display: none !important;
         }
