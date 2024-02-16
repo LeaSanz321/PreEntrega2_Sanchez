@@ -817,18 +817,18 @@ a {
   right: 30px;
   border: 1px solid blue;
   background: transparent;
-  /* #regular_like:active{
-      background-color: red;
-      display: none;
-  }
-  #add_like:active{
-      display: block;
-      color: red;
-  } */
 }
 .main .contenedorImgGal .btn_like #add_like {
   color: red;
   display: none;
+}
+.main .contenedorImgGal .btn_like #regular_like.active {
+  background-color: red;
+  display: none;
+}
+.main .contenedorImgGal .btn_like #add_like.active {
+  display: block;
+  color: red;
 }
 .main .ul_likes {
   justify-content: center;
