@@ -813,29 +813,6 @@ a {
 }
 .main .contenedorImgGal .btn_like {
   display: none;
-  /* position: absolute;
-  top: 15px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  border: none;
-  background: transparent;
-  #add_like{
-      font-size: 20px;
-      color: red;
-      display: none;
-  }
-  #regular_like{
-      font-size: 20px;
-  }
-  #regular_like.active{
-      background-color: red;
-      display: none;
-  }
-  #add_like.active{
-      display: block;
-      color: red;
-  } */
 }
 .main .contenedorImgGal:hover .btn_like {
   display: block;

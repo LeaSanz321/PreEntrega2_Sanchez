@@ -32,28 +32,6 @@ const toggleFavs = (product) => {
     }
 }
 
-/* const showFavsList = () => {
-    ulLikes.innerHTML = '';
-
-    favorites.forEach(product => {
-        const favoriteCardLi = document.createElement('li');
-
-        const favoriteCardDiv = document.createElement('div');
-        favoriteCardDiv.classList.add('contenedorImgGal col-sm-6 col-md-4');
-        favoriteCardLi.appendChild(favoriteCardDiv);
-
-        const imgFavProduct = document.createElement('img');
-        imgFavProduct.classList.add('w-100 h-100 object-fit-cover');
-        imgFavProduct.setAttribute(src, product.src);
-        favoriteCardLi.appendChild(imgFavProduct);
-
-
-        ulLikes.appendChild(favoriteCardLi);
-    })
-} */
-
-
-
 const showHTML = () => {
     card_product.forEach(product => {
         const contentCard = product.dataset.productoId;
@@ -67,8 +45,6 @@ const showHTML = () => {
         favoriteBtnRegular.classList.toggle('active', isFavorite);
         favoriteButton.classList.toggle('favorite-active', isFavorite);
     })
-
-    /* showFavsList(); */
 }
 
 
