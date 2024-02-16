@@ -65,8 +65,8 @@
     </header>
     <main class="main">
         <!--/*class="d-flex flex-wrap justify-content-center align-items-center gap-3 p-5"-->
-        <section class="row p-4 justify-content-center gap-3" id="contenedorMisMg">
-            <ul class="ul_likes d-flex flex-wrap" id="ul_likes">
+        <section class="row p-4 justify-content-center" id="contenedorMisMg">
+            <ul class="ul_likes d-flex flex-wrap p-4 justify-content-center gap-3" id="ul_likes">
             
             </ul>
         </section>
@@ -167,19 +167,27 @@
       AOS.init();
     </script>
     <script>
-        const listaProd = window.localStorage.getItem("lista-productos"),
+        const listaProd = JSON.parse(localStorage.getItem("favorites")),
               panelLikes = document.querySelector(".ul_likes")  
               
-              
+              console.log(listaProd);
         if(listaProd != null){
-            listaProd.split("=").forEach(element => {
-                if(window.localStorage.getItem(element) != null){
+            listaProd.forEach(element => {
+                let nodeLi = document.createElement('li');
+                nodeLi.innerHTML = `
+                <div class="contenedorImgGal col-sm-6 col-md-4" data-aos="flip-left" data-producto-id="${element.id}">
+                  <img src="../assets/images/${element.src}" class="w-100 h-100 object-fit-cover">
+                </div>
+                `
+                panelLikes.appendChild(nodeLi);
+                
+                /* if(window.localStorage.getItem(element) != null){
                     let nodeLi = document.createElement("li")
                     nodeLi.innerHTML = window.localStorage.getItem(element)
                     panelLikes.appendChild(nodeLi)
-                    }
-                })
-       }
+                    } */
+            })
+        }
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
