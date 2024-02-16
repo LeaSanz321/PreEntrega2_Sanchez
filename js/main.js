@@ -63,4 +63,40 @@ btn_like.forEach(button => {
     })
 })
 
+function agregarMarcas(){
+    const cajaUno = document.querySelector('.cajaUno');
+    const cajaDos = document.querySelector('.cajaDos');
+    
+    //FETCH UNO
+    fetch("../json/data1.json")
+        .then((prom)=>{
+            return prom.json();
+        })
+        .then((datos)=>{
+            datos.forEach((data)=>{
+                cajaUno.innerHTML += `
+                <div class="${data.clas}"></div>
+                `;
+            });
+        })
+        
+
+    //FETCH DOS
+    fetch("../json/data2.json")
+        .then((prom)=>{
+            return prom.json();
+        })
+        .then((datos)=>{
+            datos.forEach((data)=>{
+                cajaDos.innerHTML += `
+                <div class="${data.clas}"></div>
+                `;
+            })
+        })
+    
+
+}
+
+window.addEventListener('DOMContentLoaded', agregarMarcas);
+
 loadFavFromLocalStorage();
